@@ -1,0 +1,25 @@
+.nav {
+  background-color: #fff;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    display: block;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: $headingColorText;
+    text-transform: uppercase;
+    padding: 19px 19px 21px;
+
+    &:hover {
+      text-shadow: 0 0 1px #818080;
+    }
+  }
+}
