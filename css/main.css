@@ -395,3 +395,81 @@ a {
 .card__stars i {
   cursor: pointer;
 }
+
+.feature {
+  padding-bottom: 97px;
+}
+
+.feature__box {
+  background-color: #222224;
+  display: flex;
+}
+
+.feature__img {
+  height: 529px;
+  width: 767px;
+  background-color: #f0f0f0;
+  background-image: url(../images/Feature_img_gradient.png), url(../images/Feature_img.png);
+  background-size: cover;
+  padding-top: 132px;
+  padding-left: 39px;
+}
+
+.feature__h1 {
+  font-size: 54px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+}
+
+.feature__h1_color {
+  font-size: 54px;
+  font-weight: bold;
+  color: #f16d7f;
+  letter-spacing: 0.03em;
+}
+
+.feature__h2 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+}
+
+.feature__articles {
+  width: 373px;
+  padding: 48px 36px 48px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.feature__article {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature__article-img {
+  align-self: start;
+}
+
+.feature__article-content {
+  width: 100%;
+}
+
+.feature__article-h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fbfbfb;
+  letter-spacing: 0.03em;
+  margin-left: 33px;
+}
+
+.feature__article-text {
+  font-size: 14px;
+  font-weight: 300;
+  color: #fbfbfb;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  margin-left: 30px;
+}
