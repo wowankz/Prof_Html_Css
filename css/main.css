@@ -409,7 +409,7 @@ a {
   height: 529px;
   width: 767px;
   background-color: #f0f0f0;
-  background-image: url(../images/Feature_img_gradient.png), url(../images/Feature_img.png);
+  background-image: url(../images/Feature_img.jpg);
   background-size: cover;
   padding-top: 132px;
   padding-left: 39px;
@@ -472,4 +472,139 @@ a {
   letter-spacing: 0.03em;
   line-height: 24px;
   margin-left: 30px;
+}
+
+.subscribe {
+  height: 438px;
+  background-image: url(../images/subscribe_img.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  margin-bottom: 109px;
+  display: flex;
+}
+
+.subscribe__left {
+  width: 800px;
+  border-right: 1px solid #e3e3e3;
+}
+
+.subscribe__right {
+  width: 800px;
+}
+
+.left {
+  display: flex;
+  padding-top: 111px;
+  padding-right: 32px;
+}
+
+.left__img {
+  height: 83px;
+  width: 83px;
+  background-color: black;
+  border-radius: 83px;
+}
+
+.left__content {
+  width: 426px;
+  padding-left: 28px;
+}
+
+.left__quote {
+  font-size: 16px;
+  font-style: italic;
+  color: #222224;
+  letter-spacing: 0.03em;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.left__box-name {
+  padding-top: 8px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #222224;
+  letter-spacing: 0.03em;
+  line-height: 14px;
+}
+
+.left__name_color {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f16d7f;
+  letter-spacing: 0.03em;
+  line-height: 26px;
+}
+
+.left__link-box {
+  display: flex;
+  justify-content: start;
+  padding-top: 41px;
+}
+
+.left__link {
+  display: block;
+  height: 4px;
+  width: 38px;
+  background-color: #d6d6d6;
+  margin-right: 13px;
+}
+
+.left__link_color {
+  background-color: #f16d7f;
+}
+
+.right {
+  padding: 140px 92px 0 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right__h2 {
+  font-size: 24px;
+  color: #222224;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.right__text {
+  font-size: 14px;
+  color: #222224;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  font-weight: 600;
+}
+
+.right__form {
+  align-self: start;
+  height: 46px;
+  display: flex;
+  border-radius: 23px;
+  overflow: hidden;
+  margin-top: 35px;
+}
+
+.right__form-input {
+  width: 282px;
+  height: 46px;
+  background-color: #e1e1e1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #222224;
+  letter-spacing: 0.03em;
+  line-height: 46px;
+  padding: 18px 28px;
+}
+
+.right__form-button {
+  display: flex;
+  justify-content: center;
+  width: 104px;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+  line-height: 46px;
+  background-color: #f16d7f;
 }
