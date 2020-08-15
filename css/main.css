@@ -350,6 +350,10 @@ a {
   width: 123px;
 }
 
+.card__button-add:hover {
+  box-shadow: 0 0 5px #ffffff;
+}
+
 .card__cart-img {
   margin-right: 8px;
 }

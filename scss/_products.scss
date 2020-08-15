@@ -63,6 +63,9 @@
     height: 39px;
     width: 123px;
   }
+  &__button-add:hover {
+    box-shadow: 0 0 5px #ffffff;
+  }
   &__cart-img {
     margin-right: 8px;
   }
