@@ -1,0 +1,104 @@
+.products {
+  text-align: center;
+  padding-bottom: 113px;
+  &__h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: $headingColorText;
+    letter-spacing: 0.03em;
+    line-height: 25px;
+  }
+
+  &__desc {
+    font-size: 14px;
+    color: #9f9f9f;
+    letter-spacing: 0.03em;
+    margin-top: 16px;
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 44px;
+    padding-bottom: 44px;
+    justify-content: space-between;
+  }
+}
+
+.card {
+  width: 261px;
+  margin: 16px 0;
+  position: relative;
+  &:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 8px 0px $colorShadow;
+    .card__stars {
+      display: block;
+    }
+    .card__hover {
+      display: flex;
+    }
+  }
+  &__hover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 91px;
+    display: none;
+    justify-content: center;
+    background-color: #3a3838bf;
+    padding-top: 97px;
+  }
+
+  &__button-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 8px;
+    height: 39px;
+    width: 123px;
+  }
+  &__cart-img {
+    margin-right: 8px;
+  }
+  &__img {
+    height: 280px;
+    width: 261px;
+  }
+
+  &__content {
+    text-align: left;
+    padding: 19px 14px;
+  }
+
+  &__h3 {
+    margin-bottom: 17px;
+    font-size: 13px;
+    color: $headingColorText;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: $buttonColor;
+    text-transform: uppercase;
+  }
+  &__stars {
+    font-size: 15px;
+    color: #e4af48;
+    text-transform: uppercase;
+    display: none;
+    & i {
+      cursor: pointer;
+    }
+  }
+}
