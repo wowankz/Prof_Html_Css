@@ -1,0 +1,49 @@
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  min-height: 448px;
+  &__about {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(137, 137, 137, 1);
+    letter-spacing: 0.03em;
+    line-height: 26px;
+  }
+
+  &__desc {
+    max-width: 430px;
+    padding: 17px 10px 17px 0;
+  }
+
+  &__company {
+  }
+
+  &__h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: $buttonColor;
+    letter-spacing: 0.03em;
+    line-height: 26px;
+  }
+
+  &__information {
+  }
+
+  &__category {
+  }
+}
+
+.footer-menu {
+  padding-top: 26px;
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    font-size: 16px;
+    color: #898989;
+    text-align: right;
+    letter-spacing: 0.03em;
+    line-height: 47px;
+  }
+}

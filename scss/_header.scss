@@ -18,6 +18,7 @@
   &__right {
     display: flex;
     align-items: center;
+    position: relative;
   }
 
   &__cart {
@@ -90,5 +91,136 @@
   &__img {
     height: 29px;
     width: 32px;
+  }
+}
+
+.cart-down {
+  width: 262px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 45px;
+  padding: 20px 15px;
+  &__product {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    padding: 15px 0;
+    border-bottom: 1px solid #ededed;
+  }
+  &__link {
+    display: flex;
+  }
+  &__img {
+    height: 85px;
+    width: 72px;
+    &:hover {
+      box-shadow: 1px 2px 3px 0 $colorShadow;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-grow: 1.5;
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+
+  &__name {
+    max-width: 143px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #222222;
+    text-transform: uppercase;
+    max-width: 120px;
+    word-break: break-all;
+    &:hover {
+      color: $buttonColor;
+    }
+  }
+
+  &__stars {
+    max-width: 120px;
+    font-size: 12px;
+    color: #e4af48;
+    text-transform: uppercase;
+    transform: scale(1, 1);
+    & .fa-star:hover {
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+
+  &__price {
+    max-width: 120px;
+    font-size: 10px;
+    color: $buttonColor;
+    text-transform: uppercase;
+  }
+
+  &__count {
+    font-size: 12px;
+    color: #f16d7f;
+    text-transform: uppercase;
+  }
+
+  &__sum {
+    font-size: 12px;
+    color: $buttonColor;
+    text-transform: uppercase;
+  }
+
+  &__close {
+    font-size: 16px;
+    color: #c0c0c0;
+    text-transform: uppercase;
+    padding-top: 37px;
+    .fa-times-circle:hover {
+      color: #f16d7f;
+    }
+  }
+
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  &__total-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  &__total-sum {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    height: 50px;
+    margin-top: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4a4a4a;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    &:hover {
+      color: $buttonColor;
+      border: 1px solid $buttonColor;
+    }
   }
 }
