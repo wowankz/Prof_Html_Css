@@ -1,5 +1,23 @@
 .nav {
   background-color: #fff;
+  &__down-menu {
+    width: 878px;
+    top: 48px;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s;
+    & .down-menu__block:not(:nth-child(3n)) {
+      margin-right: 46px;
+    }
+
+    & .down-menu__heading {
+      padding-top: 12px;
+    }
+  }
+  &__down-menu_last {
+    right: 0;
+  }
 }
 
 .menu {
@@ -7,6 +25,13 @@
   justify-content: center;
   &__item {
     list-style-type: none;
+    position: relative;
+    &:hover .nav__down-menu {
+      display: flex;
+      visibility: visible;
+      opacity: 1;
+      transition: 0.8s;
+    }
   }
 
   &__link {
@@ -17,9 +42,28 @@
     color: $headingColorText;
     text-transform: uppercase;
     padding: 19px 19px 21px;
-
+    transition: 0.6s;
     &:hover {
-      text-shadow: 0 0 1px #818080;
+      color: $buttonColor;
+    }
+  }
+  &__banner {
+    position: relative;
+    height: 118px;
+    width: 255px;
+    margin-top: 18px;
+    background-image: url(../images/banner_menu.png);
+    background-size: cover;
+    &-text {
+      position: absolute;
+      right: 10px;
+      bottom: 12px;
+      font-size: 22px;
+      font-weight: 900;
+      color: #ffffff;
+      letter-spacing: 0.03em;
+      line-height: 28px;
+      text-transform: uppercase;
     }
   }
 }

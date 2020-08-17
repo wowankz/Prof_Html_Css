@@ -23,20 +23,28 @@
     padding-bottom: 44px;
     justify-content: space-between;
   }
+  &__button {
+    padding: 15px 24px 15px 24px;
+  }
 }
 
 .card {
   width: 261px;
   margin: 16px 0;
   position: relative;
+  transition: 0.6s;
   &:hover {
     background-color: #ffffff;
     box-shadow: 0px 5px 8px 0px $colorShadow;
     .card__stars {
       display: block;
+      opacity: 1;
+      visibility: visible;
     }
     .card__hover {
       display: flex;
+      opacity: 1;
+      visibility: visible;
     }
   }
   &__hover {
@@ -45,10 +53,13 @@
     right: 0;
     top: 0;
     bottom: 91px;
-    display: none;
+    display: flex;
     justify-content: center;
     background-color: #3a3838bf;
     padding-top: 97px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
   }
 
   &__button-add {
@@ -62,6 +73,7 @@
     padding: 12px 8px;
     height: 39px;
     width: 123px;
+    transition: 0.8s;
   }
   &__button-add:hover {
     box-shadow: 0 0 5px #ffffff;
@@ -99,9 +111,15 @@
     font-size: 15px;
     color: #e4af48;
     text-transform: uppercase;
-    display: none;
-    & i {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.8s;
+
+    & i:hover {
       cursor: pointer;
+      color: $buttonColor;
+      transition: 0.8s;
     }
   }
 }

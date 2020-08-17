@@ -12,6 +12,7 @@
     position: relative;
     height: 261px;
     width: 560px;
+    transition: 0.3s;
     &_big {
       height: 542px;
       width: 560px;
@@ -19,6 +20,8 @@
 
     &:hover {
       box-shadow: 2px 2px 8px $colorShadow;
+      transform: scaleY(1.001);
+      // transform: scaleX(1.01);
     }
   }
 
