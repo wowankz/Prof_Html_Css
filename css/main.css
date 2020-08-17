@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -32,9 +32,10 @@ a {
           align-items: center;
   font-size: 27px;
   color: #222222;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.68px;
   line-height: 32px;
   text-transform: uppercase;
+  font-weight: 300;
 }
 
 .logo__img {
@@ -46,8 +47,8 @@ a {
 .logo__last-letter {
   color: #f16d7f;
   font-size: 27px;
-  font-weight: 900;
-  letter-spacing: 0.03em;
+  font-weight: 400;
+  letter-spacing: 0.68px;
   line-height: 32px;
   text-transform: uppercase;
 }
@@ -200,8 +201,9 @@ a {
   outline: none;
   font-size: 14px;
   color: #222222;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.35px;
   line-height: 35px;
+  font-weight: 300;
   position: relative;
   cursor: pointer;
   border-radius: 3px 0 0 3px;
@@ -1219,8 +1221,8 @@ a {
   text-align: right;
   letter-spacing: 0.03em;
   line-height: 47px;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .footer-menu__link:hover {
