@@ -1,0 +1,253 @@
+/* section subscribe */
+.subscribe {
+  height: 438px;
+  background-image: url(../images/subscribe_img.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  margin-bottom: 109px;
+  display: flex;
+  &__left {
+    width: 800px;
+    border-right: 1px solid #e3e3e3;
+  }
+
+  &__right {
+    width: 800px;
+  }
+}
+
+.left {
+  display: flex;
+  padding-top: 111px;
+  padding-right: 32px;
+  &__img {
+    height: 83px;
+    width: 83px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 83px;
+  }
+
+  &__content {
+    width: 426px;
+    padding-left: 28px;
+  }
+
+  &__quote {
+    font-size: 16px;
+    font-style: italic;
+    color: rgba(34, 34, 36, 1);
+    letter-spacing: 0.03em;
+    line-height: 26px;
+    font-weight: 600;
+  }
+
+  &__box-name {
+    padding-top: 8px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #222224;
+    letter-spacing: 0.03em;
+    line-height: 14px;
+  }
+
+  &__name {
+    &_color {
+      font-size: 16px;
+      font-weight: bold;
+      color: $buttonColor;
+      letter-spacing: 0.03em;
+      line-height: 26px;
+    }
+  }
+
+  &__link-box {
+    display: flex;
+    justify-content: start;
+    padding-top: 41px;
+  }
+
+  &__link {
+    display: block;
+    height: 4px;
+    width: 38px;
+    background-color: #d6d6d6;
+    margin-right: 13px;
+    transition: 0.6s;
+    &_color {
+      background-color: $buttonColor;
+    }
+    &:hover {
+      background-color: $buttonColor;
+    }
+  }
+}
+
+.right {
+  padding: 140px 92px 0 92px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__h2 {
+    font-size: 24px;
+    color: #222224;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    font-size: 14px;
+    color: #222224;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    font-weight: 600;
+  }
+
+  &__form {
+    align-self: start;
+    height: 46px;
+    display: flex;
+    border-radius: 23px;
+    overflow: hidden;
+    margin-top: 35px;
+  }
+
+  &__form-input {
+    width: 282px;
+    height: 46px;
+    background-color: #e1e1e1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #222224;
+    letter-spacing: 0.03em;
+    line-height: 46px;
+    padding: 18px 28px;
+  }
+
+  &__form-button {
+    display: flex;
+    justify-content: center;
+    width: 104px;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 0.03em;
+    line-height: 46px;
+    background-color: $buttonColor;
+    transition: 0.8s;
+    &:hover {
+      box-shadow: 1px 2px 3px 2px $colorShadow;
+      background-color: $buttonColor - 33;
+    }
+  }
+}
+
+/* section subscribe end */
+
+/* section content  */
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  min-height: 448px;
+  &__about {
+    font-size: 14px;
+    font-weight: 300;
+    color: rgba(137, 137, 137, 1);
+    letter-spacing: 0.03em;
+    line-height: 26px;
+    flex-basis: 40%;
+  }
+
+  &__desc {
+    max-width: 430px;
+    padding: 17px 0;
+  }
+
+  &__company {
+    flex-basis: 20%;
+    margin-left: 52px;
+  }
+
+  &__h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: $buttonColor;
+    letter-spacing: 0.03em;
+    line-height: 26px;
+  }
+
+  &__information {
+    flex-basis: 20%;
+  }
+
+  &__category {
+    flex-basis: 20%;
+  }
+}
+
+.footer-menu {
+  padding-top: 26px;
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    font-size: 16px;
+    color: #898989;
+    text-align: right;
+    letter-spacing: 0.03em;
+    line-height: 47px;
+    transition: 0.3s;
+    &:hover {
+      color: $buttonColor;
+      font-weight: 600;
+    }
+  }
+}
+
+/* section content end */
+
+/* section copyright */
+
+.footer {
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 79px;
+    background-color: #e6e6e6;
+  }
+
+  &__copyright-text {
+    font-size: 16px;
+    color: #7a7a7a;
+    letter-spacing: 0.03em;
+    line-height: 42px;
+  }
+
+  &__copyright-icons {
+    display: flex;
+  }
+
+  &__copyright-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    font-size: 16px;
+    color: #b2b2b2;
+    background-color: #fff;
+    letter-spacing: 0.03em;
+    line-height: 42px;
+    transition: 0.8s;
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+    &:hover {
+      background-color: $buttonColor;
+      color: #f7f7f8;
+    }
+  }
+}
+
+/* section copyright end */
