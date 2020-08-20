@@ -1,0 +1,220 @@
+.main {
+  .breadcrumb {
+    height: 14.8rem;
+    background-color: #f8f3f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__h1 {
+      color: $extra-color;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 2rem;
+      text-transform: uppercase;
+    }
+
+    &__nav {
+      font-size: 1.4rem;
+      font-weight: 700;
+      line-height: 2rem;
+      text-transform: uppercase;
+      &-link {
+        color: #636363;
+        font-weight: 400;
+        &:not(:last-child)::after {
+          content: "/";
+        }
+        &:last-child {
+          font-weight: 700;
+          color: $extra-color;
+        }
+      }
+    }
+  }
+
+  .product {
+    &__slide-img {
+      height: 77.7rem;
+      border: 0.1rem solid #eaeaea;
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+    }
+    &__img {
+      height: 72.4rem;
+    }
+
+    &__info {
+      display: flex;
+      justify-content: center;
+      min-height: 76.3rem;
+      &-h1 {
+        color: #4d4d4d;
+        font-size: 1.8rem;
+        font-weight: 900;
+        line-height: 1.8rem;
+        text-transform: uppercase;
+        margin-top: 2rem;
+      }
+    }
+
+    &__desc {
+      width: 114rem;
+      border: 0.1rem solid #eaeaea;
+      background-color: $button-font-color;
+      padding: 7.3rem 0;
+      margin-top: -9.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .category-name {
+        position: relative;
+        margin-top: 1.4rem;
+        border-bottom: 1px solid #eaeaea;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $extra-color;
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 1.4rem;
+        text-transform: uppercase;
+        padding-bottom: 1.5rem;
+        &__border-button {
+          position: absolute;
+          display: flex;
+          bottom: -0.2rem;
+          border-bottom: 0.3rem solid #ef5b70;
+          width: 6.3rem;
+        }
+      }
+    }
+    &__stars {
+      margin-top: 2.4rem;
+      font-size: 1.9rem;
+      color: $stars-color;
+      text-transform: uppercase;
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      transition: 0.3s;
+      & i:hover {
+        cursor: pointer;
+        color: $extra-color;
+        transition: 0.3s;
+      }
+    }
+
+    &__text {
+      text-align: center;
+      width: 61.8rem;
+      color: #5e5e5e;
+      font-size: 1.4rem;
+      font-weight: 300;
+      line-height: 2.4rem;
+      margin-top: 2.6rem;
+    }
+
+    &__property {
+      display: flex;
+      padding-top: 2.8rem;
+      .property {
+        color: #b9b9b9;
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 2.4rem;
+        text-transform: uppercase;
+        margin: 0 2.2rem;
+        &__name {
+        }
+        &__value {
+          color: #2f2f2f;
+        }
+      }
+    }
+
+    &__price {
+      color: #ef5b70;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 2.4rem;
+      margin-top: 3.7rem;
+    }
+    &__hr {
+      width: 642px;
+      border-bottom: 1px solid #eaeaea;
+      margin-top: 4.3rem;
+    }
+
+    &__choose {
+      margin-top: 6.3rem;
+      display: flex;
+      &-name {
+        display: flex;
+        color: #2f2f2f;
+        font-family: Lato;
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 2.4rem;
+        text-transform: uppercase;
+      }
+      & input {
+        width: 14.4rem;
+        height: 3.5rem;
+        border: 0.1rem solid #eaeaea;
+        background-color: $button-font-color;
+        color: #bcbcbc;
+        padding: 1.2rem 1.5rem;
+        font-size: 1.3rem;
+        font-weight: 400;
+        line-height: 2.4rem;
+        outline: none;
+        &:not(:last-child) {
+          margin-right: 5.8rem;
+        }
+      }
+    }
+    &__button {
+      // Style for "Rectangle"
+      width: 53.7rem;
+      height: 5.5rem;
+      border: 1px solid #ef5b70;
+      background-color: $button-font-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2.8rem;
+      color: #ef5b70;
+      font-size: 1.6rem;
+      font-weight: 700;
+      &-img {
+        width: 2.6rem;
+        height: 2.4rem;
+        margin-right: 1.5rem;
+      }
+      &:hover {
+        box-shadow: 0 0 0.4rem 0 $extra-color;
+      }
+    }
+  }
+
+  .like {
+    text-align: center;
+    padding-top: 11.9rem;
+    &__h2 {
+      color: #4d4d4d;
+      font-size: 2.4rem;
+      font-weight: 900;
+      line-height: 2rem;
+      text-transform: uppercase;
+      padding-bottom: 7.2rem;
+    }
+    &__content {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__content-img {
+      object-fit: contain;
+    }
+  }
+}
