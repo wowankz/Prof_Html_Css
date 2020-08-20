@@ -32,7 +32,7 @@
       content: "\f0d7";
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
-      padding-left: 0.4rem;
+      // padding-left: 0.4rem;
       color: $extra-color;
     }
     &[open] .drop-menu {
@@ -65,7 +65,7 @@
       content: none;
     }
     &::after {
-      content: "\f0da";
+      content: "\f0d7";
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
       padding-left: 0.8rem;

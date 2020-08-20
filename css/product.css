@@ -366,7 +366,6 @@ a {
   content: "\f0d7";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  padding-left: 0.4rem;
   color: #f16d7f;
 }
 
@@ -413,7 +412,7 @@ a {
 }
 
 .header__form-summary::after {
-  content: "\f0da";
+  content: "\f0d7";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   padding-left: 0.8rem;
@@ -1124,7 +1123,7 @@ a {
   background-image: url(../images/subscribe_img.jpg);
   background-size: cover;
   background-position: center bottom;
-  margin-bottom: 109px;
+  margin-bottom: 10.9rem;
   margin-top: 9.7rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1133,7 +1132,7 @@ a {
 
 .footer__subscribe-left {
   width: 80rem;
-  border-right: 1px solid #ffffff;
+  border-right: 0.1rem solid #ffffff;
 }
 
 .footer__subscribe-left .left {
@@ -1299,7 +1298,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 44.8rem;
+  min-height: 34rem;
 }
 
 .footer-content__about {
@@ -1404,7 +1403,7 @@ a {
           align-items: center;
   height: 3.2rem;
   width: 3.2rem;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #b2b2b2;
   background-color: #fff;
   letter-spacing: 0.03em;

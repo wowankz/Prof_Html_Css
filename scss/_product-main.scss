@@ -162,7 +162,7 @@
         width: 14.4rem;
         height: 3.5rem;
         border: 0.1rem solid #eaeaea;
-        background-color: $button-font-color;
+        background-color: #ffffff;
         color: #bcbcbc;
         padding: 1.2rem 1.5rem;
         font-size: 1.3rem;
@@ -171,6 +171,9 @@
         outline: none;
         &:not(:last-child) {
           margin-right: 5.8rem;
+        }
+        &::placeholder {
+          color: $extra-color;
         }
       }
     }
