@@ -71,7 +71,7 @@ a {
 }
 
 .drop-menu {
-  display: none;
+  display: flex;
   position: absolute;
   background-color: #ffffff;
   border-radius: 0.5rem;
@@ -134,7 +134,7 @@ a {
   &::after {
     content: "";
     position: absolute;
-    left: 6.3rem;
+    left: 6.6rem;
     top: -1.2rem;
     border: 0.6rem solid transparent;
     border-bottom: 0.6rem solid white;

@@ -84,8 +84,11 @@
     color: #a4a4a4;
     font-size: 1.4rem;
     font-weight: 300;
-    line-height: 32px;
+    line-height: 3.2rem;
     letter-spacing: 0.035rem;
+    &::placeholder {
+      color: #ececec;
+    }
   }
 
   &__form-button {
@@ -142,7 +145,7 @@
   width: 26.2rem;
   border: 0.1rem solid #e9e9e9;
   background-color: #ffffff;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   display: flex;
   visibility: hidden;
   opacity: 0;
@@ -152,7 +155,7 @@
   left: -20rem;
   padding: 20px 15px;
   transition: 0.6s;
-  box-shadow: 1px 2px 3px 0 $shadow-color;
+  box-shadow: 0.1rem 0.2rem 0.3rem 0 $shadow-color;
   &:hover {
     opacity: 1;
     visibility: visible;
@@ -164,8 +167,8 @@
     display: flex;
     justify-content: space-between;
     align-content: space-around;
-    padding: 15px 0;
-    border-bottom: 1px solid #ededed;
+    padding: 1.5rem 0;
+    border-bottom: 0.1rem solid #ededed;
     &:first-child {
       padding-top: 0;
     }
@@ -173,12 +176,12 @@
       display: flex;
     }
     &-img {
-      height: 85px;
-      width: 72px;
+      height: 8.5rem;
+      width: 7.2rem;
       transition: all 0.4s;
-      border-radius: 2px;
+      border-radius: 0.2rem;
       &:hover {
-        box-shadow: 1px 2px 3px 0 $shadow-color;
+        box-shadow: 0.1rem 0.2rem 0.3rem 0 $shadow-color;
         transform: scale(1.1);
       }
     }
@@ -189,17 +192,17 @@
       justify-content: space-around;
       align-items: flex-start;
       flex-grow: 1.5;
-      padding-left: 15px;
-      padding-right: 10px;
+      padding-left: 1.5rem;
+      padding-right: 1rem;
     }
 
     &-name {
-      max-width: 120px;
-      font-size: 12px;
-      font-weight: bold;
+      max-width: 12rem;
+      font-size: 1.2rem;
+      font-weight: 700;
       color: #222222;
       text-transform: uppercase;
-      max-width: 120px;
+      max-width: 12rem;
       word-break: break-all;
       transition: all 0.3s;
       &:hover {
@@ -208,8 +211,8 @@
     }
 
     &-stars {
-      max-width: 120px;
-      font-size: 12px;
+      max-width: 12rem;
+      font-size: 1.2rem;
       color: $stars-color;
       text-transform: uppercase;
 
@@ -223,29 +226,29 @@
     }
 
     &-price {
-      max-width: 120px;
-      font-size: 10px;
+      max-width: 12rem;
+      font-size: 1rem;
       color: $extra-color;
       text-transform: uppercase;
     }
 
     &-count {
-      font-size: 12px;
+      font-size: 1.2rem;
       color: #f16d7f;
       text-transform: uppercase;
     }
 
     &-sum {
-      font-size: 12px;
+      font-size: 1.2rem;
       color: $extra-color;
       text-transform: uppercase;
     }
 
     &-close {
-      font-size: 16px;
+      font-size: 1.6rem;
       color: #c0c0c0;
       text-transform: uppercase;
-      padding-top: 37px;
+      padding-top: 3.7rem;
       .fa-times-circle {
         transition: all 0.4s;
       }
@@ -261,11 +264,11 @@
   &__total {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 2rem 0;
   }
 
   &__total-name {
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold;
     color: #222222;
     text-transform: uppercase;

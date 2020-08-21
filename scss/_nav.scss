@@ -3,13 +3,14 @@
   height: 5.1rem;
   &__drop-menu {
     flex-wrap: nowrap;
-    width: 0;
+    width: 87.8rem;
     height: auto;
-    top: 42px;
+    top: 5.5rem;
     left: -70rem;
     visibility: hidden;
     opacity: 0;
-    transition: all 0.1s linear;
+    transition: all 0.3s linear;
+    transition-delay: 0.4s;
     & .drop-menu__block:not(:nth-child(3n)) {
       margin-right: 4.6rem;
     }
@@ -37,18 +38,19 @@
       margin-right: 0.4rem;
     }
     &_active {
-      border-bottom: 3px solid $extra-color;
+      border-bottom: 0.3rem solid $extra-color;
     }
     &:hover {
-      border-bottom: 3px solid $extra-color;
+      border-bottom: 0.3rem solid $extra-color;
     }
     &:hover .nav__drop-menu {
       display: flex;
+      flex-wrap: wrap;
       visibility: visible;
       opacity: 1;
       height: auto;
       width: 87.8rem;
-      transition: 0.4s;
+      transition: 0.3s;
       left: auto;
     }
   }
