@@ -22,27 +22,40 @@
                 <details class="header__form-browse">
                     <summary class="header__form-summary">Browse</summary>
                     <div class="drop-menu">
-                        <div class="drop-menu__block">
-                            <h3 class="drop-menu__heading">women</h3>
-                            <a href="#" class="drop-menu__link">Dresses</a>
-                            <a href="#" class="drop-menu__link">Tops</a>
-                            <a href="#" class="drop-menu__link">Sweaters/Knits</a>
-                            <a href="#" class="drop-menu__link">Jackets/Coats</a>
-                            <a href="#" class="drop-menu__link">Blazers</a>
-                            <a href="#" class="drop-menu__link">Denim</a>
-                            <a href="#" class="drop-menu__link">Leggings/Pants</a>
-                            <a href="#" class="drop-menu__link">Skirts/Shorts</a>
-                            <a href="#" class="drop-menu__link">Accessories</a>
+                        <div class="drop-menu__overflow">
+                            <div class="drop-menu__block">
+                                <h3 class="drop-menu__heading">women</h3>
+                                <a href="#" class="drop-menu__link">Dresses</a>
+                                <a href="#" class="drop-menu__link">Tops</a>
+                                <a href="#" class="drop-menu__link">Sweaters/Knits</a>
+                                <a href="#" class="drop-menu__link">Jackets/Coats</a>
+                                <a href="#" class="drop-menu__link">Blazers</a>
+                                <a href="#" class="drop-menu__link">Denim</a>
+                                <a href="#" class="drop-menu__link">Leggings/Pants</a>
+                                <a href="#" class="drop-menu__link">Skirts/Shorts</a>
+                                <a href="#" class="drop-menu__link">Accessories</a>
+                            </div>
+                            <div class="drop-menu__block">
+                                <h3 class="drop-menu__heading">Men</h3>
+                                <a href="#" class="drop-menu__link">Tees/Tank tops</a>
+                                <a href="#" class="drop-menu__link">Shirts/Polos</a>
+                                <a href="#" class="drop-menu__link">Sweaters</a>
+                                <a href="#" class="drop-menu__link">Sweatshirts/Hoodies</a>
+                                <a href="#" class="drop-menu__link">Blazers</a>
+                                <a href="#" class="drop-menu__link">Jackets/vests</a>
+                                <a href="#" class="drop-menu__link">Accessories</a>
+                            </div>
+                            <div class="drop-menu__block">
+                                <h3 class="drop-menu__heading">Men</h3>
+                                <a href="#" class="drop-menu__link">Tees/Tank tops</a>
+                                <a href="#" class="drop-menu__link">Shirts/Polos</a>
+                                <a href="#" class="drop-menu__link">Sweaters</a>
+                                <a href="#" class="drop-menu__link">Sweatshirts/Hoodies</a>
+                                <a href="#" class="drop-menu__link">Blazers</a>
+                                <a href="#" class="drop-menu__link">Jackets/vests</a>
+                            </div>
                         </div>
-                        <div class="drop-menu__block">
-                            <h3 class="drop-menu__heading">Men</h3>
-                            <a href="#" class="drop-menu__link">Tees/Tank tops</a>
-                            <a href="#" class="drop-menu__link">Shirts/Polos</a>
-                            <a href="#" class="drop-menu__link">Sweaters</a>
-                            <a href="#" class="drop-menu__link">Sweatshirts/Hoodies</a>
-                            <a href="#" class="drop-menu__link">Blazers</a>
-                            <a href="#" class="drop-menu__link">Jackets/vests</a>
-                        </div>
+
                     </div>
                 </details>
                 <input type="text" class="header__form-input" placeholder="Search for Item...">
@@ -160,8 +173,8 @@
                     </div>
                 </div>
             </li>
-            <li class=" menu__item">
-                <a href="#" class=" menu__link menu__item_active">Women</a>
+            <li class=" menu__item menu__item_active">
+                <a href="#" class=" menu__link ">Women</a>
                 <div class="drop-menu nav__drop-menu">
                     <div class="drop-menu__block ">
                         <a href="#" class="drop-menu__link">
@@ -448,10 +461,10 @@
 
                     <span class="product__price">$561</span>
                     <div class="product__hr"></div>
-                    <div class="product__choose">
+                    <form method="POST" class="product__choose">
                         <div>
                             <label class="product__choose-name" for="color">CHOOSE COLOR</label><br>
-                            <input name="color" list="colors">
+                            <input name="color" list="colors" placeholder="RED">
                             <datalist id="colors">
                                 <option>RED</option>
                                 <option value="RED" />
@@ -460,7 +473,7 @@
                         </div>
                         <div>
                             <label class="product__choose-name" for="size">CHOOSE SIZE</label> <br>
-                            <input name="size" list="sizes">
+                            <input name="size" list="sizes" placeholder="XXL">
                             <datalist id="sizes">
                                 <option selected value="XXL" />
                                 <option value="XL" />
@@ -471,7 +484,7 @@
                             <input type="number" name="quantity" placeholder="2">
                         </div>
 
-                    </div>
+                    </form>
                     <a href="#" class="product__button">
                         <img src="images/cart-red.png" alt="cart" class="product__button-img">
                         Add to Cart

@@ -37,17 +37,30 @@
     }
     &[open] .drop-menu {
       animation-name: slideDown;
-      animation-duration: 0.4s;
+      animation-delay: 0s;
+      animation-duration: 0.3s;
       display: flex;
+      height: 57.8rem;
+      width: 28.6rem;
+      & .drop-menu__overflow {
+        animation-name: slideDown;
+        animation-delay: 0s;
+        animation-duration: 0.3s;
+      }
+      &:hover .drop-menu__overflow {
+        overflow-y: auto;
+        margin-right: -2rem;
+        display: flex;
+      }
     }
     &:not([open]) .drop-menu {
-      opacity: 0;
+      opacity: 1;
+      height: 0;
     }
   }
 
   &__form-summary {
     display: flex;
-    align-items: center;
     outline: none;
     padding: 0 0.8rem 0 1.5rem;
     color: #838383;
@@ -69,7 +82,6 @@
       font-family: "Font Awesome 5 Free";
       font-weight: 900;
       padding-left: 0.8rem;
-      padding-top: 0.1rem;
     }
   }
 
@@ -81,13 +93,13 @@
     border-radius: unset;
     background-color: #fff;
     outline: none;
-    color: #a4a4a4;
+    color: $main-font-color;
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 3.2rem;
     letter-spacing: 0.035rem;
     &::placeholder {
-      color: #ececec;
+      color: #c0c0c0;
     }
   }
 
@@ -155,6 +167,7 @@
   left: -20rem;
   padding: 20px 15px;
   transition: 0.6s;
+  transition-delay: 0.4s;
   box-shadow: 0.1rem 0.2rem 0.3rem 0 $shadow-color;
   &:hover {
     opacity: 1;
@@ -305,19 +318,30 @@
     content: "";
     position: absolute;
     left: 2.3rem;
-    top: -1.2rem;
-    border: 0.6rem solid transparent;
-    border-bottom: 0.6rem solid white;
+    top: -0.7rem;
+    border-right: 0.8rem solid transparent;
+    border-left: 0.8rem solid transparent;
+    border-bottom: 0.8rem solid #ffffff;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 2.3rem;
+    top: -0.8rem;
+    border-right: 0.8rem solid transparent;
+    border-left: 0.8rem solid transparent;
+    border-bottom: 0.8rem solid #e9e9e9;
   }
 }
 
 // -------------------------------------
 @keyframes slideDown {
   0% {
-    opacity: 0;
+    height: 0;
   }
+
   100% {
-    opacity: 1;
+    height: 57.3rem;
   }
 }
 // ----------------------------------

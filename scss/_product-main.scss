@@ -95,7 +95,7 @@
       color: $stars-color;
       text-transform: uppercase;
       display: block;
-      opacity: 1;
+      opacity: 0;
       visibility: visible;
       transition: 0.3s;
       & i:hover {
@@ -163,7 +163,7 @@
         height: 3.5rem;
         border: 0.1rem solid #eaeaea;
         background-color: #ffffff;
-        color: #bcbcbc;
+        color: $extra-color;
         padding: 1.2rem 1.5rem;
         font-size: 1.3rem;
         font-weight: 400;
@@ -173,13 +173,13 @@
           margin-right: 5.8rem;
         }
         &::placeholder {
-          color: $extra-color;
+          color: #bcbcbc;
         }
       }
     }
     &__button {
       // Style for "Rectangle"
-      width: 53.7rem;
+      width: 54.7rem;
       height: 5.5rem;
       border: 1px solid #ef5b70;
       background-color: $button-font-color;

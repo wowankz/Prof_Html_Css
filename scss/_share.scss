@@ -79,8 +79,13 @@ a {
   box-shadow: 0 0.3rem 0.6rem 0 rgba(0, 0, 0, 0.08);
   padding: 1.3rem 2rem 0.8rem 2rem;
   flex-wrap: wrap;
-  top: 3.3rem;
+  top: 3.6rem;
   z-index: 1000;
+  &__overflow {
+    overflow: hidden;
+    height: 57.6rem;
+    margin-top: -1.3rem;
+  }
   &__block {
     display: flex;
     flex-direction: column;
@@ -134,10 +139,20 @@ a {
   &::after {
     content: "";
     position: absolute;
-    left: 6.6rem;
-    top: -1.2rem;
-    border: 0.6rem solid transparent;
-    border-bottom: 0.6rem solid white;
+    left: 6.5rem;
+    top: -0.7rem;
+    border-right: 0.8rem solid transparent;
+    border-left: 0.8rem solid transparent;
+    border-bottom: 0.8rem solid #ffffff;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 6.5rem;
+    top: -0.8rem;
+    border-right: 0.8rem solid transparent;
+    border-left: 0.8rem solid transparent;
+    border-bottom: 0.8rem solid #e9e9e9;
   }
 }
 
