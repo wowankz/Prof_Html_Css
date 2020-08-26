@@ -2,7 +2,6 @@
   background-color: #fff;
   height: 5.1rem;
   &__drop-menu {
-    flex-wrap: nowrap;
     width: 87.8rem;
     height: auto;
     top: 5.5rem;
@@ -59,7 +58,7 @@
       visibility: visible;
       opacity: 1;
       height: auto;
-      width: 87.8rem;
+      width: 88rem;
       transition: 0.5s;
       left: 0;
     }
@@ -69,7 +68,7 @@
       visibility: visible;
       opacity: 1;
       height: auto;
-      width: 87.8rem;
+      width: 88rem;
       transition: 0.5s;
       right: 0;
     }

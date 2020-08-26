@@ -16,7 +16,9 @@ body {
   @media screen and (max-width: 1140px) {
     & {
       font-size: 0.858vw;
-      padding: 0 0.2rem;
+    }
+    .center {
+      padding: 0 0.5rem;
     }
   }
 }
