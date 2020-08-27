@@ -928,7 +928,7 @@ input::-webkit-calendar-picker-indicator {
   border-bottom: 0.3rem solid #f16d7f;
 }
 
-.menu__item:hover::after {
+.menu__item:hover:not(:first-child)::after {
   content: "";
   position: absolute;
   left: 45%;
@@ -942,7 +942,7 @@ input::-webkit-calendar-picker-indicator {
   transition: 0.3s;
 }
 
-.menu__item:hover::before {
+.menu__item:hover:not(:first-child)::before {
   content: "";
   position: absolute;
   left: 45%;

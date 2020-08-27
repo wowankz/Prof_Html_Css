@@ -57,7 +57,7 @@
 
     &:hover {
       border-bottom: 0.3rem solid $extra-color;
-      &::after {
+      &:not(:first-child)::after {
         content: "";
         position: absolute;
         left: 45%;
@@ -69,7 +69,7 @@
         opacity: 1;
         transition: 0.3s;
       }
-      &::before {
+      &:not(:first-child)::before {
         content: "";
         position: absolute;
         left: 45%;
