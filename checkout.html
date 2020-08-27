@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/shopping-cart.css">
+    <link rel="stylesheet" href="css/checkout.css">
     <script src="https://kit.fontawesome.com/bad01150ed.js" crossorigin="anonymous"></script>
     <title>Главная</title>
 </head>
@@ -63,7 +63,7 @@
             </form>
         </div>
         <div class="header__right">
-            <a href="#" class="header__cart">
+            <a href="shopping-cart.html" class="header__cart">
                 <img src="images/cart.png" alt="card" class="header__cart-img">
             </a>
             <div class="drop-cart">
@@ -111,8 +111,8 @@
                     <span class="drop-cart__total-name">TOTAL</span>
                     <span class="drop-cart__total-sum">$500.00</span>
                 </div>
-                <a href="checkout.html" class="drop-cart__button">Checkout</a>
-                <a href="#" class="drop-cart__button">Go to cart</a>
+                <a href="#" class="drop-cart__button">Checkout</a>
+                <a href="shopping-cart.html" class="drop-cart__button">Go to cart</a>
             </div>
 
             <a href="#" class="button">My Account<i class="fas fa-caret-down"></i></a>
@@ -414,131 +414,69 @@
 
     <main class="main">
         <section class="breadcrumb center">
-            <h1 class="breadcrumb__h1">Shopping cart</h1>
+            <h1 class="breadcrumb__h1">Shipping Address</h1>
             <div class="breadcrumb__nav">
                 <a href="index.html" class="breadcrumb__nav-link">Home </a>
-                <a href="#" class="breadcrumb__nav-link">Shopping cart</a>
+                <a href="shopping-cart.html" class="breadcrumb__nav-link">Shopping cart</a>
+                <a href="#" class="breadcrumb__nav-link">Shipping Address</a>
             </div>
         </section>
+        <section class="checkout center">
+            <div class="checkout__shipping-block">
+                <div class="checkout__shipping-address">
+                    <h3 class="checkout__heading">01. Shipping Address</h3>
+                    <div class="checkout__form">
+                        <form action="" class="checkout__form-continue">
+                            <h4 class="checkout__form-h4">Check as a guest or register</h4>
+                            <p class="checkout__form-text">Register with us for future convenience</p>
+                            <div class="checkout__form-radio">
+                                <input type="radio" id="guest" name="checkout" value="">
+                                <label class="checkout__form-label" for="guest">checkout as guest</label>
+                            </div>
+                            <div class="checkout__form-radio">
+                                <input type="radio" id="register" name="checkout" value="" checked>
+                                <label class="checkout__form-label" for="register">register</label>
+                            </div>
 
-        <section class="shopping-cart center">
-            <div class="shopping-cart__table">
-                <div class="shopping-cart__headings">
-                    <div class="shopping-cart__headings-name shopping-cart__headings-name_big">Product Details</div>
-                    <div class="shopping-cart__headings-name">Unite Price</div>
-                    <div class="shopping-cart__headings-name">Quantity</div>
-                    <div class="shopping-cart__headings-name">Shipping</div>
-                    <div class="shopping-cart__headings-name">Subtotal</div>
-                    <div class="shopping-cart__headings-name">ACTION</div>
-                </div>
-                <div class="shopping-cart__product">
-                    <div class="shopping-cart__product-details">
-                        <a href="product.html" class="shopping-cart__product-img">
-                            <img src="images/shopping-cart-product-1.jpg" alt="product">
-                        </a>
-
-                        <div class="shopping-cart__product-info">
-                            <a href="product.html" class="shopping-cart__product-name">
-                                <h3>Mango People T-shirt</h3>
-                            </a>
-                            <p class="shopping-cart__product-property">Color: <span>Red</span></p>
-                            <p class="shopping-cart__product-property">Size: <span>Xll</span></p>
-                        </div>
-
-                    </div>
-                    <div class="shopping-cart__product-price">$150</div>
-                    <div class="shopping-cart__product-quantity">
-                        <input type="text" placeholder="2" value="2">
-                    </div>
-                    <div class="shopping-cart__product-shipping">FREE</div>
-                    <div class="shopping-cart__product-subtotal">$300</div>
-                    <div class="shopping-cart__product-action">
-                        <a href="#" class="shopping-cart__product-close"><i class="fas fa-times-circle"></i></a>
-                    </div>
-                </div>
-                <div class="shopping-cart__product">
-                    <div class="shopping-cart__product-details">
-                        <a href="product.html" class="shopping-cart__product-img">
-                            <img src="images/shopping-cart-product-2.jpg" alt="product">
-                        </a>
-
-                        <div class="shopping-cart__product-info">
-                            <a href="product.html" class="shopping-cart__product-name">
-                                <h3>Mango People T-shirt</h3>
-                            </a>
-                            <p class="shopping-cart__product-property">Color: <span>Red</span></p>
-                            <p class="shopping-cart__product-property">Size: <span>Xll</span></p>
-                        </div>
-
-                    </div>
-                    <div class="shopping-cart__product-price">$150</div>
-                    <div class="shopping-cart__product-quantity">
-                        <input type="text" placeholder="2">
-                    </div>
-                    <div class="shopping-cart__product-shipping">FREE</div>
-                    <div class="shopping-cart__product-subtotal">$300</div>
-                    <div class="shopping-cart__product-action">
-                        <a href="#" class="shopping-cart__product-close"><i class="fas fa-times-circle"></i></a>
-                    </div>
-                </div>
-                <div class="shopping-cart__product">
-                    <div class="shopping-cart__product-details">
-                        <a href="product.html" class="shopping-cart__product-img">
-                            <img src="images/shopping-cart-product-3.jpg" alt="product">
-                        </a>
-
-                        <div class="shopping-cart__product-info">
-                            <a href="product.html" class="shopping-cart__product-name">
-                                <h3>Mango People T-shirt</h3>
-                            </a>
-                            <p class="shopping-cart__product-property">Color: <span>Red</span></p>
-                            <p class="shopping-cart__product-property">Size: <span>Xll</span></p>
-                        </div>
-
-                    </div>
-                    <div class="shopping-cart__product-price">$150</div>
-                    <div class="shopping-cart__product-quantity">
-                        <input type="text" placeholder="2">
-                    </div>
-                    <div class="shopping-cart__product-shipping">FREE</div>
-                    <div class="shopping-cart__product-subtotal">$300</div>
-                    <div class="shopping-cart__product-action">
-                        <a href="#" class="shopping-cart__product-close"><i class="fas fa-times-circle"></i></a>
+                            <h4 class="checkout__form-h4">register and save time!</h4>
+                            <p class="checkout__form-text">Register with us for future convenience</p>
+                            <p class="checkout__form-text"><i class="fas fa-angle-double-right"></i>Fast and easy
+                                checkout
+                            </p>
+                            <p class="checkout__form-text"><i class="fas fa-angle-double-right"></i>Easy access to your
+                                order history and status</p>
+                            <a href="#" class="checkout__form-button checkout__form-button_left">Continue</a>
+                        </form>
+                        <form action="" class="checkout__form-login">
+                            <h4 class="checkout__form-h4">Already registered?</h4>
+                            <p class="checkout__form-text">Please log in below</p>
+                            <label class="checkout__form-label" for="email">EMAIL ADDRESS<span> *</span></label>
+                            <input type="text" name="email" placeholder="example@domen.com">
+                            <label class="checkout__form-label" for="password">PASSWORD<span> *</span></label>
+                            <input type="password" name="password" placeholder="Password">
+                            <p class="checkout__form-text checkout__form-text_red"> <span>* </span> Required Fields</p>
+                            <div class="checkout__button-box">
+                                <a href="#" class="checkout__form-button">Log in</a>
+                                <a href="#" class="checkout__form-forgot">Forgot Password ?</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div class="shopping-cart__button-box">
-                <a href="#" class="shopping-cart__button">CLEAR SHOPPING CART</a>
-                <a href="#" class="shopping-cart__button">CONTINUE SHOPPING</a>
+            <div class="checkout__shipping-block">
+                <h3 class="checkout__heading">02. BILLING INFORMATION</h3>
             </div>
-
-            <div class="shopping-cart__form">
-                <form action="" class="shopping-cart__form-address">
-                    <div class="shopping-cart__form-heading">Shipping Address</div>
-                    <div class="shopping-cart__form-country">
-                        <input name="country" list="countries" placeholder="Bangladesh">
-                        <datalist id="countries">
-                            <option value="USA">USA</option>
-                            <option value="Russia">Russia</option>
-                        </datalist>
-                    </div>
-                    <input type="text" class="shopping-cart__form-state" placeholder="State">
-                    <input type="text" class="shopping-cart__form-postcode" placeholder="Postcode / Zip">
-                    <a href="#" class="shopping-cart__form-button">Get a quote</a>
-                </form>
-                <form action="" class="shopping-cart__form-discount">
-                    <div class="shopping-cart__form-heading">Coupon discount</div>
-                    <label class="shopping-cart__label-coupon" for="coupon">
-                        Enter your coupon code if you have one
-                    </label><br>
-                    <input class="shopping-cart__form-coupon" type="text" name="coupon" placeholder="State">
-                    <a href="#" class="shopping-cart__form-button">Apply coupon</a>
-                </form>
-                <div class="shopping-cart__form-total">
-                    <p class="shopping-cart__form-sub">Sub total <span>$900</span></p>
-                    <p class="shopping-cart__form-grand">GRAND TOTAL <span>$900</span></p>
-                    <a href="checkout.html" class="shopping-cart__button_red">proceed to checkout</a>
-                </div>
+            <div class="checkout__shipping-block">
+                <h3 class="checkout__heading">03. SHIPPING INFORMATION</h3>
+            </div>
+            <div class="checkout__shipping-block">
+                <h3 class="checkout__heading">04. SHIPPING METHOD</h3>
+            </div>
+            <div class="checkout__shipping-block">
+                <h3 class="checkout__heading">05. PAYMENT METHOD</h3>
+            </div>
+            <div class="checkout__shipping-block">
+                <h3 class="checkout__heading">06. ORDER REVIEW</h3>
             </div>
         </section>
 
