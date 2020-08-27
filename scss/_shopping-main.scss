@@ -1,8 +1,8 @@
-.main {
-  .breadcrumb {
-    @include breadcrumb;
-  }
+.breadcrumb {
+  @include breadcrumb;
+}
 
+.main {
   .shopping-cart {
     &__table {
       padding: 9rem 0 4.4rem;

@@ -1,8 +1,7 @@
+.breadcrumb {
+  @include breadcrumb;
+}
 .main {
-  .breadcrumb {
-    @include breadcrumb;
-  }
-
   .product {
     &__slide-img {
       position: relative;

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/category.css">
     <script src="https://kit.fontawesome.com/bad01150ed.js" crossorigin="anonymous"></script>
     <title>Главная</title>
 </head>
@@ -55,7 +55,6 @@
                                 <a href="#" class="drop-menu__link">Jackets/vests</a>
                             </div>
                         </div>
-
                     </div>
                 </details>
                 <input type="text" class="header__form-input" placeholder="Search for Item...">
@@ -68,11 +67,11 @@
             </a>
             <div class="drop-cart">
                 <div class="drop-cart__product">
-                    <a href="product.html" class="drop-cart__product-link">
+                    <a href="#" class="drop-cart__product-link">
                         <img src="images/drop-cart_porduct_1.png" alt="product" class="drop-cart__product-img">
                     </a>
                     <div class="drop-cart__product-info">
-                        <a href="product.html" class="drop-cart__product-name">Rebox Zane</a>
+                        <a href="#" class="drop-cart__product-name">Rebox Zane</a>
                         <div class="drop-cart__product-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -88,11 +87,11 @@
                     <a href="#" class="drop-cart__product-close"><i class="far fa-times-circle"></i></a>
                 </div>
                 <div class="drop-cart__product">
-                    <a href="product.html" class="drop-cart__product-link">
+                    <a href="#" class="drop-cart__product-link">
                         <img src="images/drop-cart_porduct_2.png" alt="product" class="drop-cart__product-img">
                     </a>
                     <div class="drop-cart__product-info">
-                        <a href="product.html" class="drop-cart__product-name">Rebox Zane</a>
+                        <a href="#" class="drop-cart__product-name">Rebox Zane</a>
                         <div class="drop-cart__product-stars">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
@@ -126,7 +125,7 @@
                 <a href="index.html" class="a menu__link">Home</a>
 
             </li>
-            <li class=" menu__item ">
+            <li class=" menu__item menu__item_active">
                 <a href="#" class=" menu__link">Man</a>
                 <div class="drop-menu nav__drop-menu">
                     <div class="drop-menu__block ">
@@ -173,8 +172,8 @@
                     </div>
                 </div>
             </li>
-            <li class=" menu__item ">
-                <a href="product.html" class=" menu__link ">Women</a>
+            <li class=" menu__item">
+                <a href="product.html" class=" menu__link">Women</a>
                 <div class="drop-menu nav__drop-menu">
                     <div class="drop-menu__block ">
                         <a href="#" class="drop-menu__link">
@@ -412,73 +411,14 @@
     </nav>
 
     <section class="breadcrumb center">
-        <h1 class="breadcrumb__h1">Shipping Address</h1>
+        <h1 class="breadcrumb__h1">New Arrivals</h1>
         <div class="breadcrumb__nav">
             <a href="index.html" class="breadcrumb__nav-link">Home </a>
-            <a href="shopping-cart.html" class="breadcrumb__nav-link">Shopping cart</a>
-            <a href="#" class="breadcrumb__nav-link">Shipping Address</a>
+            <a href="#" class="breadcrumb__nav-link">Men</a>
+            <a href="#" class="breadcrumb__nav-link">New Arrivals</a>
         </div>
     </section>
     <main class="main">
-
-        <section class="checkout center">
-            <div class="checkout__shipping-block">
-                <div class="checkout__shipping-address">
-                    <h3 class="checkout__heading">01. Shipping Address</h3>
-                    <div class="checkout__form">
-                        <form action="" class="checkout__form-continue" method="POST">
-                            <h4 class="checkout__form-h4">Check as a guest or register</h4>
-                            <p class="checkout__form-text">Register with us for future convenience</p>
-                            <div class="checkout__form-radio">
-                                <input type="radio" id="guest" name="checkout" value="">
-                                <label class="checkout__form-label" for="guest">checkout as guest</label>
-                            </div>
-                            <div class="checkout__form-radio">
-                                <input type="radio" id="register" name="checkout" value="" checked>
-                                <label class="checkout__form-label" for="register">register</label>
-                            </div>
-
-                            <h4 class="checkout__form-h4">register and save time!</h4>
-                            <p class="checkout__form-text">Register with us for future convenience</p>
-                            <p class="checkout__form-text"><i class="fas fa-angle-double-right"></i>Fast and easy
-                                checkout
-                            </p>
-                            <p class="checkout__form-text"><i class="fas fa-angle-double-right"></i>Easy access to your
-                                order history and status</p>
-                            <a href="#" class="checkout__form-button checkout__form-button_left">Continue</a>
-                        </form>
-                        <form action="" method="POST" class="checkout__form-login">
-                            <h4 class="checkout__form-h4">Already registered?</h4>
-                            <p class="checkout__form-text">Please log in below</p>
-                            <label class="checkout__form-label" for="email">EMAIL ADDRESS<span> *</span></label>
-                            <input type="email" name="email" placeholder="example@domen.com" required>
-                            <label class="checkout__form-label" for="password">PASSWORD<span> *</span></label>
-                            <input type="password" name="password" placeholder="Password" required>
-                            <p class="checkout__form-text checkout__form-text_red"> <span>* </span> Required Fields</p>
-                            <div class="checkout__button-box">
-                                <a href="#" class="checkout__form-button">Log in</a>
-                                <a href="#" class="checkout__form-forgot">Forgot Password ?</a>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="checkout__shipping-block">
-                <h3 class="checkout__heading">02. BILLING INFORMATION</h3>
-            </div>
-            <div class="checkout__shipping-block">
-                <h3 class="checkout__heading">03. SHIPPING INFORMATION</h3>
-            </div>
-            <div class="checkout__shipping-block">
-                <h3 class="checkout__heading">04. SHIPPING METHOD</h3>
-            </div>
-            <div class="checkout__shipping-block">
-                <h3 class="checkout__heading">05. PAYMENT METHOD</h3>
-            </div>
-            <div class="checkout__shipping-block">
-                <h3 class="checkout__heading">06. ORDER REVIEW</h3>
-            </div>
-        </section>
 
     </main>
 
@@ -521,7 +461,7 @@
         </section>
 
         <!-- section footer-content -->
-        <section class="footer-content center">
+        <div class="footer-content center">
             <div class="footer-content__about">
                 <a href="index.html" class="logo">
                     <img src="images//logo.png" alt="logo" class="logo__img">
@@ -598,9 +538,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </div>
         <!-- section copyright -->
-        <div class="footer__copyright center">
+        <section class="footer__copyright center">
             <p class="footer__copyright-text">© 2017 Brand All Rights Reserved.</p>
             <div class="footer__copyright-icons">
                 <a href="#" class="footer__copyright-link"><i class="fab fa-facebook-f"></i></a>
@@ -609,7 +549,7 @@
                 <a href="#" class="footer__copyright-link"><i class="fab fa-pinterest-p"></i></a>
                 <a href="#" class="footer__copyright-link"><i class="fab fa-google-plus-g"></i></a>
             </div>
-        </div>
+        </section>
     </footer>
 
 </body>

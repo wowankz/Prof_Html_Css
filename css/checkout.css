@@ -389,7 +389,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .header__form-browse[open] summary::after {
-  content: "\f0d7";
+  content: "\f0d8";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: #f16d7f;
@@ -1000,7 +1000,7 @@ input::-webkit-calendar-picker-indicator {
   color: #f16d7f;
 }
 
-.main .breadcrumb {
+.breadcrumb {
   height: 14.8rem;
   background-color: #f8f3f4;
   display: -webkit-box;
@@ -1014,7 +1014,7 @@ input::-webkit-calendar-picker-indicator {
           align-items: center;
 }
 
-.main .breadcrumb__h1 {
+.breadcrumb__h1 {
   color: #f16d7f;
   font-size: 2.4rem;
   font-weight: 700;
@@ -1022,23 +1022,23 @@ input::-webkit-calendar-picker-indicator {
   text-transform: uppercase;
 }
 
-.main .breadcrumb__nav {
+.breadcrumb__nav {
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 2rem;
   text-transform: uppercase;
 }
 
-.main .breadcrumb__nav-link {
+.breadcrumb__nav-link {
   color: #636363;
   font-weight: 400;
 }
 
-.main .breadcrumb__nav-link:not(:last-child)::after {
+.breadcrumb__nav-link:not(:last-child)::after {
   content: "/";
 }
 
-.main .breadcrumb__nav-link:last-child {
+.breadcrumb__nav-link:last-child {
   font-weight: 700;
   color: #f16d7f;
 }
