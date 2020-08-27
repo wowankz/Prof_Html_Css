@@ -88,7 +88,7 @@
                     <a href="#" class="drop-cart__product-close"><i class="far fa-times-circle"></i></a>
                 </div>
                 <div class="drop-cart__product">
-                    <a href="#" class="drop-cart__product-link">
+                    <a href="shopping-cart.html" class="drop-cart__product-link">
                         <img src="images/drop-cart_porduct_2.png" alt="product" class="drop-cart__product-img">
                     </a>
                     <div class="drop-cart__product-info">
@@ -112,7 +112,7 @@
                     <span class="drop-cart__total-sum">$500.00</span>
                 </div>
                 <a href="#" class="drop-cart__button">Checkout</a>
-                <a href="#" class="drop-cart__button">Go to cart</a>
+                <a href="shopping-cart.html" class="drop-cart__button">Go to cart</a>
             </div>
 
             <a href="#" class="button">My Account<i class="fas fa-caret-down"></i></a>
@@ -462,21 +462,21 @@
                     <span class="product__price">$561</span>
                     <div class="product__hr"></div>
                     <form method="POST" class="product__choose">
-                        <div>
+                        <div class="product__choose-datalist">
                             <label class="product__choose-name" for="color">CHOOSE COLOR</label><br>
-                            <input name="color" list="colors" placeholder="RED">
+                            <input name="color" list="colors" placeholder="Red">
                             <datalist id="colors">
-                                <option>RED</option>
-                                <option value="RED" />
-                                <option value="Blue" />
+                                <option selected value="RED">
+                                <option value="RED">
+                                <option value="Blue">
                             </datalist>
                         </div>
-                        <div>
+                        <div class="product__choose-datalist">
                             <label class="product__choose-name" for="size">CHOOSE SIZE</label> <br>
                             <input name="size" list="sizes" placeholder="XXL">
                             <datalist id="sizes">
-                                <option selected value="XXL" />
-                                <option value="XL" />
+                                <option selected value="XXL">
+                                <option value="XL">
                             </datalist>
                         </div>
                         <div>

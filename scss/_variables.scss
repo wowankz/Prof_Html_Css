@@ -4,3 +4,53 @@ $extra-color: #f16d7f;
 $main-font-color: #222222;
 $button-font-color: #ffffff;
 $shadow-color: rgba(0, 0, 0, 0.16);
+
+@mixin breadcrumb {
+  height: 14.8rem;
+  background-color: #f8f3f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__h1 {
+    color: $extra-color;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+  }
+
+  &__nav {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    &-link {
+      color: #636363;
+      font-weight: 400;
+      &:not(:last-child)::after {
+        content: "/";
+      }
+      &:last-child {
+        font-weight: 700;
+        color: $extra-color;
+      }
+    }
+  }
+}
+
+@mixin hover-red-button {
+  transition: 0.3s;
+  &:hover {
+    box-shadow: 0.2rem 0.2rem 0.3rem 0rem rgb(74, 71, 71);
+    background-color: $extra-color - 33;
+  }
+}
+
+@mixin input-hover-focus {
+  transition: 0.4s;
+  &:hover,
+  &:focus {
+    border: 0.1rem solid $extra-color;
+    box-shadow: 0 0 0.2rem 0 $extra-color;
+  }
+}

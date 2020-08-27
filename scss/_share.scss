@@ -61,15 +61,11 @@ a {
   font-size: 1.5rem;
   color: $button-font-color;
   background-color: $extra-color;
-  transition: 0.4s;
   & i {
     margin-left: 0.8rem;
     font-size: 1.4rem;
   }
-  &:hover {
-    box-shadow: 0.1rem 0.2rem 0.3rem 0.2rem $shadow-color;
-    background-color: $extra-color - 33;
-  }
+  @include hover-red-button;
 }
 
 .drop-menu {
@@ -263,4 +259,7 @@ a {
       transition: 0.3s;
     }
   }
+}
+input::-webkit-calendar-picker-indicator {
+  display: none;
 }

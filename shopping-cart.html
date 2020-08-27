@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/product.css">
+    <link rel="stylesheet" href="css/shopping-cart.css">
     <script src="https://kit.fontawesome.com/bad01150ed.js" crossorigin="anonymous"></script>
     <title>Главная</title>
 </head>
@@ -422,6 +422,126 @@
             </div>
         </section>
 
+        <section class="shopping-cart center">
+            <div class="shopping-cart__table">
+                <div class="shopping-cart__headings">
+                    <div class="shopping-cart__headings-name shopping-cart__headings-name_big">Product Details</div>
+                    <div class="shopping-cart__headings-name">Unite Price</div>
+                    <div class="shopping-cart__headings-name">Quantity</div>
+                    <div class="shopping-cart__headings-name">Shipping</div>
+                    <div class="shopping-cart__headings-name">Subtotal</div>
+                    <div class="shopping-cart__headings-name">ACTION</div>
+                </div>
+                <div class="shopping-cart__product">
+                    <div class="shopping-cart__product-details">
+                        <a href="#" class="shopping-cart__product-img">
+                            <img src="images/shopping-cart-product-1.jpg" alt="product">
+                        </a>
+
+                        <div class="shopping-cart__product-info">
+                            <a href="#" class="shopping-cart__product-name">
+                                <h3>Mango People T-shirt</h3>
+                            </a>
+                            <p class="shopping-cart__product-property">Color: <span>Red</span></p>
+                            <p class="shopping-cart__product-property">Size: <span>Xll</span></p>
+                        </div>
+
+                    </div>
+                    <div class="shopping-cart__product-price">$150</div>
+                    <div class="shopping-cart__product-quantity">
+                        <input type="text" placeholder="2" value="2">
+                    </div>
+                    <div class="shopping-cart__product-shipping">FREE</div>
+                    <div class="shopping-cart__product-subtotal">$300</div>
+                    <div class="shopping-cart__product-action">
+                        <a href="#" class="shopping-cart__product-close"><i class="fas fa-times-circle"></i></a>
+                    </div>
+                </div>
+                <div class="shopping-cart__product">
+                    <div class="shopping-cart__product-details">
+                        <a href="#" class="shopping-cart__product-img">
+                            <img src="images/shopping-cart-product-2.jpg" alt="product">
+                        </a>
+
+                        <div class="shopping-cart__product-info">
+                            <a href="#" class="shopping-cart__product-name">
+                                <h3>Mango People T-shirt</h3>
+                            </a>
+                            <p class="shopping-cart__product-property">Color: <span>Red</span></p>
+                            <p class="shopping-cart__product-property">Size: <span>Xll</span></p>
+                        </div>
+
+                    </div>
+                    <div class="shopping-cart__product-price">$150</div>
+                    <div class="shopping-cart__product-quantity">
+                        <input type="text" placeholder="2">
+                    </div>
+                    <div class="shopping-cart__product-shipping">FREE</div>
+                    <div class="shopping-cart__product-subtotal">$300</div>
+                    <div class="shopping-cart__product-action">
+                        <a href="#" class="shopping-cart__product-close"><i class="fas fa-times-circle"></i></a>
+                    </div>
+                </div>
+                <div class="shopping-cart__product">
+                    <div class="shopping-cart__product-details">
+                        <a href="#" class="shopping-cart__product-img">
+                            <img src="images/shopping-cart-product-3.jpg" alt="product">
+                        </a>
+
+                        <div class="shopping-cart__product-info">
+                            <a href="#" class="shopping-cart__product-name">
+                                <h3>Mango People T-shirt</h3>
+                            </a>
+                            <p class="shopping-cart__product-property">Color: <span>Red</span></p>
+                            <p class="shopping-cart__product-property">Size: <span>Xll</span></p>
+                        </div>
+
+                    </div>
+                    <div class="shopping-cart__product-price">$150</div>
+                    <div class="shopping-cart__product-quantity">
+                        <input type="text" placeholder="2">
+                    </div>
+                    <div class="shopping-cart__product-shipping">FREE</div>
+                    <div class="shopping-cart__product-subtotal">$300</div>
+                    <div class="shopping-cart__product-action">
+                        <a href="#" class="shopping-cart__product-close"><i class="fas fa-times-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="shopping-cart__button-box">
+                <a href="#" class="shopping-cart__button">CLEAR SHOPPING CART</a>
+                <a href="#" class="shopping-cart__button">CONTINUE SHOPPING</a>
+            </div>
+
+            <div class="shopping-cart__form">
+                <form action="" class="shopping-cart__form-address">
+                    <div class="shopping-cart__form-heading">Shipping Address</div>
+                    <div class="shopping-cart__form-country">
+                        <input name="country" list="countries" placeholder="Bangladesh">
+                        <datalist id="countries">
+                            <option value="USA">USA</option>
+                            <option value="Russia">Russia</option>
+                        </datalist>
+                    </div>
+                    <input type="text" class="shopping-cart__form-state" placeholder="State">
+                    <input type="text" class="shopping-cart__form-postcode" placeholder="Postcode / Zip">
+                    <a href="#" class="shopping-cart__form-button">Get a quote</a>
+                </form>
+                <form action="" class="shopping-cart__form-discount">
+                    <div class="shopping-cart__form-heading">Coupon discount</div>
+                    <label class="shopping-cart__label-coupon" for="coupon">
+                        Enter your coupon code if you have one
+                    </label><br>
+                    <input class="shopping-cart__form-coupon" type="text" name="coupon" placeholder="State">
+                    <a href="#" class="shopping-cart__form-button">Apply coupon</a>
+                </form>
+                <div class="shopping-cart__form-total">
+                    <p class="shopping-cart__form-sub">Sub total <span>$900</span></p>
+                    <p class="shopping-cart__form-grand">GRAND TOTAL <span>$900</span></p>
+                    <a href="#" class="shopping-cart__button_red">proceed to checkout</a>
+                </div>
+            </div>
+        </section>
 
     </main>
 
