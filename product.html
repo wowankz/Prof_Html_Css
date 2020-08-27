@@ -422,9 +422,15 @@
             </div>
         </section>
 
-        <setcion class="product">
+        <section class="product">
             <div class="product__slide-img">
+                <a href="#" class="product__slide-link product__slide-link_left">
+                    <i class="fas fa-angle-left"></i>
+                </a>
                 <img src="images/product_img.jpg" alt="product" class="product__img">
+                <a href="#" class="product__slide-link product__slide-link_right">
+                    <i class="fas fa-angle-right"></i>
+                </a>
             </div>
 
             <div class="product__info">
@@ -462,11 +468,11 @@
                     <span class="product__price">$561</span>
                     <div class="product__hr"></div>
                     <form method="POST" class="product__choose">
-                        <div class="product__choose-datalist">
+                        <div class="product__choose-datalist" data-color="">
                             <label class="product__choose-name" for="color">CHOOSE COLOR</label><br>
                             <input name="color" list="colors" placeholder="Red">
                             <datalist id="colors">
-                                <option selected value="RED">
+                                <option selected value="RED">RED</option>
                                 <option value="RED">
                                 <option value="Blue">
                             </datalist>
@@ -490,7 +496,7 @@
                     </a>
                 </div>
             </div>
-        </setcion>
+        </section>
 
         <!-- section may like -->
         <section class="like center">

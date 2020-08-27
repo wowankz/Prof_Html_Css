@@ -113,6 +113,7 @@
           text-align: center;
           font-weight: 400;
           color: #656565;
+          padding-left: 12px;
           &::placeholder {
             color: #bcbcbc;
           }
@@ -257,6 +258,15 @@
       padding: 1.6rem 1.8rem;
       outline: none;
       margin-bottom: 2.3rem;
+      /* Chrome, Safari, Edge, Opera */
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      -moz-appearance: textfield;
       &::placeholder {
         color: #b1b1b1;
       }

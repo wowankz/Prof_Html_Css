@@ -938,8 +938,8 @@ input::-webkit-calendar-picker-indicator {
   border-bottom: 0.8rem solid #ffffff;
   z-index: 9999;
   opacity: 1;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu__item:hover::before {
@@ -951,8 +951,8 @@ input::-webkit-calendar-picker-indicator {
   border-left: 0.8rem solid transparent;
   border-bottom: 0.8rem solid #e9e9e9;
   opacity: 1;
-  -webkit-transition: 0.6s;
-  transition: 0.6s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .menu__item:hover .nav__drop-menu:not(.nav__drop-menu_last) {
@@ -1044,6 +1044,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .main .product__slide-img {
+  position: relative;
   height: 77.7rem;
   border: 0.1rem solid #eaeaea;
   background-color: #f7f7f7;
@@ -1053,6 +1054,38 @@ input::-webkit-calendar-picker-indicator {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.main .product__slide-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  font-size: 2.4rem;
+  width: 4.7rem;
+  color: #ffffff;
+  height: 4.7rem;
+  background-color: #d8d8d8;
+  z-index: 9999;
+  bottom: 50%;
+}
+
+.main .product__slide-link_left {
+  left: 0;
+}
+
+.main .product__slide-link_right {
+  right: 0;
+}
+
+.main .product__slide-link:hover {
+  background-color: #f16d7f;
 }
 
 .main .product__img {
@@ -1094,6 +1127,7 @@ input::-webkit-calendar-picker-indicator {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 9999;
 }
 
 .main .product__desc .category-name {
@@ -1202,6 +1236,16 @@ input::-webkit-calendar-picker-indicator {
   position: relative;
 }
 
+.main .product__choose-datalist[data-color]::before {
+  content: "";
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #ef5b70;
+  position: absolute;
+  top: 4.7rem;
+  left: 1.2rem;
+}
+
 .main .product__choose-datalist::after {
   content: "\f107";
   font-family: "Font Awesome 5 Free";
@@ -1231,13 +1275,27 @@ input::-webkit-calendar-picker-indicator {
   height: 3.5rem;
   border: 0.1rem solid #eaeaea;
   background-color: #ffffff;
-  padding: 1.2rem 1.5rem;
+  padding: 1.2rem 1.8rem;
   font-size: 1.3rem;
   font-weight: 400;
   line-height: 2.4rem;
   outline: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+}
+
+.main .product__choose input[name="color"] {
+  padding-left: 3rem;
+}
+
+.main .product__choose input[name="quantity"] {
+  /* Firefox */
+  -moz-appearance: textfield;
+}
+
+.main .product__choose input[name="quantity"]::-webkit-outer-spin-button, .main .product__choose input[name="quantity"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .main .product__choose input:not(:last-child) {
