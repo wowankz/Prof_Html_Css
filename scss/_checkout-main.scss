@@ -1,8 +1,8 @@
-.main {
-  .breadcrumb {
-    @include breadcrumb;
-  }
+.breadcrumb {
+  @include breadcrumb;
+}
 
+.main {
   .checkout {
     padding-top: 8.9rem;
     &__shipping-block {
