@@ -1048,6 +1048,9 @@ input::-webkit-calendar-picker-indicator {
   display: -ms-flexbox;
   display: flex;
   padding-top: 5.9rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .wrap .aside-nav {
@@ -1118,6 +1121,185 @@ input::-webkit-calendar-picker-indicator {
 
 .wrap .aside-nav .aside-details__nav-link {
   color: #6f6e6e;
+}
+
+.wrap .main .catalog .catalog-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 84.6rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrap .main .catalog .catalog-form__trending-inputs {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.wrap .main .catalog .catalog-form__heading {
+  color: #6f6e6e;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+}
+
+.wrap .main .catalog .catalog-form__trending-label {
+  color: #6f6e6e;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.wrap .main .catalog .catalog-form__trending-label:not(:last-child)::after {
+  content: "|";
+  color: #dfdfdf;
+}
+
+.wrap .main .catalog .catalog-form__size-inputs {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.wrap .main .catalog .catalog-form__size-label {
+  color: #6f6e6e;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.wrap .main .catalog .catalog-form__size-input {
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 1px solid #ebebeb;
+}
+
+.wrap .main .catalog .catalog-form__price-box {
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.wrap .main .catalog .catalog-form__range-inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrap .main .catalog .catalog-form__range-min {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.wrap .main .catalog .catalog-form__range-max {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.wrap .main .catalog .catalog-form__range-outputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrap .main .catalog .catalog-form__output-min {
+  color: #6f6e6e;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.wrap .main .catalog .catalog-form__output-max {
+  color: #6f6e6e;
+  font-family: "Open Sans";
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.wrap .main .catalog .catalog-form__sort-container {
+  width: 84.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5rem;
+  background-color: #f3f3f3;
+  margin-top: 4.1rem;
+}
+
+.wrap .main .catalog .catalog-form__sort {
+  width: 15.3rem;
+  height: 3rem;
+  border: 1px solid #ebebeb;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .main .catalog .catalog-form__sort-name {
+  width: 6.6rem;
+  text-align: center;
+  border-right: 0.1rem solid #ebebeb;
+}
+
+.wrap .main .catalog .catalog-form__sort-details {
+  position: relative;
+}
+
+.wrap .main .catalog .catalog-form__sort-value {
+  outline: none;
+}
+
+.wrap .main .catalog .catalog-form__sort-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+}
+
+.wrap .main .catalog .catalog-form__show {
+  width: 15.3rem;
+  height: 3rem;
+  border: 1px solid #ebebeb;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrap .main .catalog .catalog-form__show-details {
+  position: relative;
+}
+
+.wrap .main .catalog .catalog-form__show-value {
+  outline: none;
+}
+
+.wrap .main .catalog .catalog-form__show-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
 }
 
 .footer__subscribe {

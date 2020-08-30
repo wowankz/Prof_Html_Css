@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/category.css">
+    <link rel="stylesheet" href="css/catalog.css">
     <script src="https://kit.fontawesome.com/bad01150ed.js" crossorigin="anonymous"></script>
     <title>Главная</title>
 </head>
@@ -421,7 +421,7 @@
 
     <div class="wrap center">
         <aside class="aside-nav">
-            <details class="aside-details">
+            <details class="aside-details" open>
                 <summary class="aside-details__heading">Category</summary>
                 <div class="aside-details__drop-menu">
                     <nav class="aside-details__nav">
@@ -528,7 +528,123 @@
             </details>
         </aside>
         <main class="main">
+            <div class="catalog">
+                <form
+                    oninput="minResult.value = '$'+ min.value; maxResult.value = '$'+ max.value; sortBy.value = sort.value; showValue.value = show.value"
+                    action="" class="catalog-form">
+                    <div class="catalog-form__trending-inputs">
+                        <h3 class="catalog-form__heading">Trending now</h3>
+                        <label class="catalog-form__trending-label">Bohemian
+                            <input class="catalog-form__trending-input" type="checkbox" name="bohemian" hidden>
+                        </label>
+                        <label class="catalog-form__trending-label">Floral
+                            <input class="catalog-form__trending-input" type="checkbox" name="floral" hidden>
+                        </label>
+                        <label class="catalog-form__trending-label"> Lace
+                            <input class="catalog-form__trending-input" type="checkbox" name="lace" hidden>
+                        </label>
+                        <label class="catalog-form__trending-label">Floral
+                            <input class="catalog-form__trending-input" type="checkbox" name="Floral" hidden>
+                        </label>
+                        <label class="catalog-form__trending-label">Lace
+                            <input class="catalog-form__trending-input" type="checkbox" name="Lace" hidden>
+                        </label>
+                        <label class="catalog-form__trending-label">Bohemian
+                            <input class="catalog-form__trending-input" type="checkbox" name="Bohemian" hidden>
+                        </label>
+                    </div>
+                    <div class="catalog-form__size-inputs">
+                        <h3 class="catalog-form__heading">Size</h3>
+                        <label class="catalog-form__size-label">
+                            <input type="checkbox" class="catalog-form__size-input" name="XXS"> XXS
+                        </label>
+                        <label class="catalog-form__size-label">
+                            <input type="checkbox" class="catalog-form__size-input" name="XS">XS
+                        </label>
+                        <label class="catalog-form__size-label">
+                            <input type="checkbox" class="catalog-form__size-input" name="S">S
+                        </label>
+                        <label class="catalog-form__size-label">
+                            <input type="checkbox" class="catalog-form__size-input" name="M">M
+                        </label>
+                        <label class="catalog-form__size-label">
+                            <input type="checkbox" class="catalog-form__size-input" name="L">L
+                        </label>
+                        <label class="catalog-form__size-label">
+                            <input type="checkbox" class="catalog-form__size-input" name="XL">XL
+                        </label>
+                        <label class="catalog-form__size-label">
+                            <input type="checkbox" class="catalog-form__size-input" name="XXL">XXL
+                        </label>
+                    </div>
+                    <div class="catalog-form__price-box">
+                        <h3 class="catalog-form__heading">PRICE</h3>
+                        <div class="catalog-form__range-inputs">
+                            <input name="min" type="range" min="0" max="500" step="10" value="100"
+                                class="catalog-form__range-min">
+                            <input name="max" type="range" min="500" max="1000" step="10" value="400"
+                                class="catalog-form__range-max">
+                        </div>
+                        <div class="catalog-form__range-outputs">
+                            <output name="minResult" for="min" class="catalog-form__output-min">100</output>
+                            <output name="maxResult" for="max" class="catalog-form__output-max">400</output>
+                        </div>
+                    </div>
 
+                    <div class="catalog-form__sort-container">
+                        <div class="catalog-form__sort">
+                            <div class="catalog-form__sort-name">Sort By</div>
+                            <details class="catalog-form__sort-details">
+                                <summary class="catalog-form__sort-value">
+                                    <output name="sortBy" for="sort">Name</output>
+                                </summary>
+                                <div class="catalog-form__sort-options">
+                                    <label class="catalog-form__sort-label">
+                                        Name
+                                        <input class="catalog-form__sort-input" type="radio" name="sort" value="Name"
+                                            checked hidden>
+                                    </label>
+                                    <label class="catalog-form__sort-label">
+                                        Price
+                                        <input class="catalog-form__sort-input" type="radio" name="sort" value="Price"
+                                            hidden>
+                                    </label>
+                                    <label class="catalog-form__sort-label">
+                                        Size
+                                        <input class="catalog-form__sort-input" type="radio" name="sort" value="Size"
+                                            hidden>
+                                    </label>
+                                </div>
+                            </details>
+                        </div>
+                        <div class="catalog-form__show">
+                            <div class="catalog-form__show-name">Sort By</div>
+                            <details class="catalog-form__show-details">
+                                <summary class="catalog-form__show-value">
+                                    <output name="showValue" for="show">09</output>
+                                </summary>
+                                <div class="catalog-form__show-options">
+                                    <label class="catalog-form__show-label">
+                                        09
+                                        <input class="catalog-form__show-input" type="radio" name="show" value="09"
+                                            checked hidden>
+                                    </label>
+                                    <label class="catalog-form__show-label">
+                                        12
+                                        <input class="catalog-form__show-input" type="radio" name="show" value="12"
+                                            hidden>
+                                    </label>
+                                    <label class="catalog-form__show-label">
+                                        15
+                                        <input class="catalog-form__show-input" type="radio" name="show" value="15"
+                                            hidden>
+                                    </label>
+                                </div>
+                            </details>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </main>
     </div>
 

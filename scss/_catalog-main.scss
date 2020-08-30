@@ -1,0 +1,235 @@
+.breadcrumb {
+  @include breadcrumb;
+}
+
+.wrap {
+  display: flex;
+  padding-top: 5.9rem;
+  justify-content: space-between;
+  .aside-nav {
+    width: 24.3rem;
+    .aside-details {
+      margin-bottom: 1.8rem;
+      &[open] summary {
+        color: #ef5b70;
+        &::after {
+          content: "\f0d8";
+          color: #ef5b70;
+        }
+      }
+      &__heading {
+        color: #6f6e6e;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-bottom: 0.1rem solid #ebebeb;
+        border-left: 0.5rem solid #ef5b70;
+        padding: 1.2rem 1.1rem 1.5rem;
+        outline: none;
+        position: relative;
+        &::-webkit-details-marker {
+          display: none;
+        }
+        &::-moz-list-bullet {
+          list-style-type: none;
+        }
+        &::before {
+          content: none;
+        }
+        &::after {
+          content: "\f0d7";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+          position: absolute;
+          right: 0.6rem;
+          color: #6f6e6e;
+          font-size: 1.6rem;
+          text-transform: uppercase;
+        }
+      }
+
+      &__drop-menu {
+      }
+
+      &__nav {
+        padding: 2.2rem 0 0 1.2rem;
+      }
+
+      &__nav-list {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 33px;
+      }
+
+      &__nav-item {
+        list-style-type: none;
+      }
+
+      &__nav-link {
+        color: #6f6e6e;
+      }
+    }
+  }
+
+  .main {
+    .catalog {
+      .catalog-form {
+        display: flex;
+        width: 84.6rem;
+        flex-wrap: wrap;
+        &__trending-inputs {
+          flex-basis: 33%;
+        }
+
+        &__heading {
+          color: #6f6e6e;
+          font-size: 1.4rem;
+          font-weight: 700;
+          text-transform: uppercase;
+          margin-bottom: 2.5rem;
+        }
+
+        &__trending-label {
+          color: #6f6e6e;
+          font-size: 1.4rem;
+          font-weight: 400;
+          &:not(:last-child)::after {
+            content: "|";
+            color: #dfdfdf;
+          }
+        }
+
+        &__trending-input {
+        }
+
+        &__size-inputs {
+          flex-basis: 33%;
+        }
+
+        &__size-label {
+          color: #6f6e6e;
+          font-family: "Open Sans";
+          font-size: 1.4rem;
+          font-weight: 400;
+          text-transform: uppercase;
+        }
+
+        &__size-input {
+          width: 1.3rem;
+          height: 1.3rem;
+          border: 1px solid #ebebeb;
+        }
+
+        &__price-box {
+          flex-basis: 33%;
+        }
+
+        &__range-inputs {
+          display: flex;
+        }
+
+        &__range-min {
+          flex-basis: 50%;
+        }
+
+        &__range-max {
+          flex-basis: 50%;
+        }
+
+        &__range-outputs {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        &__output-min {
+          color: #6f6e6e;
+          font-family: "Open Sans";
+          font-size: 1.4rem;
+          font-weight: 400;
+        }
+        &__output-max {
+          color: #6f6e6e;
+          font-family: "Open Sans";
+          font-size: 1.4rem;
+          font-weight: 400;
+        }
+
+        &__sort-container {
+          width: 84.6rem;
+          display: flex;
+          align-items: center;
+          height: 5rem;
+          background-color: #f3f3f3;
+          margin-top: 4.1rem;
+        }
+
+        &__sort {
+          width: 15.3rem;
+          height: 3rem;
+          border: 1px solid #ebebeb;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+        }
+
+        &__sort-name {
+          width: 6.6rem;
+          text-align: center;
+          border-right: 0.1rem solid #ebebeb;
+        }
+
+        &__sort-details {
+          position: relative;
+        }
+
+        &__sort-value {
+          outline: none;
+        }
+
+        &__sort-options {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+        }
+
+        &__sort-label {
+        }
+
+        &__sort-input {
+        }
+
+        &__show {
+          width: 15.3rem;
+          height: 3rem;
+          border: 1px solid #ebebeb;
+          background-color: #fff;
+          display: flex;
+          align-items: center;
+        }
+
+        &__show-name {
+        }
+
+        &__show-details {
+          position: relative;
+        }
+
+        &__show-value {
+          outline: none;
+        }
+
+        &__show-options {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+        }
+
+        &__show-label {
+        }
+
+        &__show-input {
+        }
+      }
+    }
+  }
+}
