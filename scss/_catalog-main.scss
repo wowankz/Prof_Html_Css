@@ -65,9 +65,9 @@
       }
 
       &__nav-list {
-        font-size: 14px;
+        font-size: 1.4rem;
         font-weight: 400;
-        line-height: 33px;
+        line-height: 3.3rem;
       }
 
       &__nav-item {
@@ -91,10 +91,10 @@
     .catalog {
       &-form {
         display: flex;
-        //width: 84.6rem;
+        justify-content: space-between;
         flex-wrap: wrap;
         &__trending {
-          flex-basis: 33%;
+          flex-basis: 32%;
           &-inputs {
             max-width: 22rem;
             display: flex;
@@ -126,7 +126,7 @@
         }
 
         &__size {
-          flex-basis: 33%;
+          flex-basis: 32%;
           &-inputs {
             display: flex;
             flex-wrap: wrap;
@@ -161,7 +161,7 @@
               font-size: 1rem;
               color: transparent;
               background: #fff;
-              border: 1px solid #ebebeb;
+              border: 0.1rem solid #ebebeb;
               transition-duration: 0.3s;
             }
 
@@ -174,7 +174,7 @@
         }
 
         &__price-box {
-          flex-basis: 33%;
+          flex-basis: 32%;
         }
 
         &__range-inputs {
@@ -182,25 +182,21 @@
         }
         &__range-wrap {
           flex-basis: 50%;
-          height: 0.6rem;
-          background-color: red;
           position: relative;
         }
         &__range-min {
+          width: 100%;
           position: absolute;
-          & {
-            // overflow: hidden;
-            -webkit-appearance: none;
-            background-color: $extra-color;
-            height: 0.6rem;
-            outline: none;
-            z-index: 1;
-          }
+          -webkit-appearance: none;
+          height: 0.6rem;
+          outline: none;
+          background: transparent;
+          top: 0.2rem;
+          right: -2px;
+          left: 0;
 
           &::-webkit-slider-runnable-track {
-            //height: 1.5rem;
             -webkit-appearance: none;
-            color: #f0f0f0;
           }
 
           &::-webkit-slider-thumb {
@@ -210,7 +206,101 @@
             border-radius: 50%;
             cursor: pointer;
             background: $extra-color;
-            z-index: 3;
+            z-index: -1;
+          }
+
+          &::-moz-range-progress {
+            background-color: #f0f0f0;
+            height: 0.6rem;
+          }
+
+          &::-moz-range-track {
+            background-color: $extra-color;
+          }
+
+          &::-ms-fill-lower {
+            background-color: #43e5f7;
+          }
+
+          &::-ms-fill-upper {
+            background-color: #9a905d;
+          }
+        }
+        &__meter-min {
+          width: 100%;
+          display: block;
+          &::-webkit-meter-bar {
+            background: $extra-color;
+            height: 0.6rem;
+            border: transparent;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+
+          /* The green (optimum) bar in Firefox */
+          &:-moz-meter-optimum::-moz-meter-bar {
+            display: none;
+            background: #f0f0f0;
+            height: 0.6rem;
+            margin-right: 0;
+            border: transparent;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+          }
+
+          /* The green (optimum) bar in Chrome etc. */
+          &::-webkit-meter-optimum-value {
+            background: #f0f0f0;
+            height: 0.6rem;
+            margin-right: 0;
+          }
+
+          // /* The yellow (sub-optimum) bar in Firefox */
+          // &:-moz-meter-sub-optimum::-moz-meter-bar {
+          //   background: #f0f0f0;
+          // }
+
+          // /* The yellow (sub-optimum) bar in Chrome etc. */
+          // &::-webkit-meter-suboptimum-value {
+          //   background: #f0f0f0;
+          // }
+
+          // /* The red (even less good) bar in Firefox */
+          // &:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+          //   background: #f0f0f0;
+          // }
+
+          // /* The red (even less good) bar in Chrome etc. */
+          // &::-webkit-meter-even-less-good-value {
+          //   background: #f0f0f0;
+          // }
+        }
+        &__range-max {
+          width: 100%;
+          position: absolute;
+          -webkit-appearance: none;
+          height: 0.6rem;
+          outline: none;
+          background: transparent;
+          top: 0.2rem;
+          right: 0;
+          left: 0;
+
+          &::-webkit-slider-runnable-track {
+            //height: 1.5rem;
+            -webkit-appearance: none;
+            //color: #f0f0f0;
+            // background-color: $extra-color;
+          }
+
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            height: 1.4rem;
+            width: 1.4rem;
+            border-radius: 50%;
+            cursor: pointer;
+            background: $extra-color;
+            z-index: -1;
             //box-shadow: -100px 0px 0 100px #f0f0f0;
           }
 
@@ -230,14 +320,35 @@
             background-color: #9a905d;
           }
         }
+        &__meter-max {
+          width: 100%;
+          display: block;
+          &::-webkit-meter-bar {
+            background: #f0f0f0;
+            height: 0.6rem;
+            border: transparent;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            //padding: 3px;
+          }
 
-        &__range-max {
-          flex-basis: 50%;
+          /* The green (optimum) bar in Firefox */
+          &:-moz-meter-optimum::-moz-meter-bar {
+            background: $extra-color;
+            height: 0.6rem;
+          }
+
+          /* The green (optimum) bar in Chrome etc. */
+          &::-webkit-meter-optimum-value {
+            background: $extra-color;
+            height: 0.6rem;
+          }
         }
 
         &__range-outputs {
           display: flex;
           justify-content: space-between;
+          margin-top: 1.6rem;
         }
 
         &__output-min {
@@ -254,8 +365,8 @@
         }
 
         &__sort-container {
-          width: 84.6rem;
           display: flex;
+          flex-basis: 100%;
           align-items: center;
           height: 5rem;
           background-color: #f3f3f3;
@@ -264,7 +375,7 @@
 
         &__sort {
           height: 3rem;
-          border: 1px solid #ebebeb;
+          border: 0.1rem solid #ebebeb;
           background-color: #fff;
           display: flex;
           margin-left: 1rem;
@@ -337,7 +448,7 @@
           color: #6f6e6e;
           font-size: 1.4rem;
           font-weight: 400;
-          margin-bottom: 8px;
+          margin-bottom: 0.8rem;
           &:hover {
             color: $extra-color;
           }
@@ -348,7 +459,7 @@
 
         &__show {
           height: 3rem;
-          border: 1px solid #ebebeb;
+          border: 0.1rem solid #ebebeb;
           background-color: #fff;
           display: flex;
           margin-left: 1rem;
@@ -420,7 +531,7 @@
           color: #6f6e6e;
           font-size: 1.4rem;
           font-weight: 400;
-          margin-bottom: 8px;
+          margin-bottom: 0.8rem;
           &:hover {
             color: $extra-color;
           }

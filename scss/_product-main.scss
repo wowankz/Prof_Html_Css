@@ -245,6 +245,9 @@
     &__content {
       display: flex;
       justify-content: space-between;
+      .card {
+        @include product-card;
+      }
     }
     &__content-img {
       object-fit: contain;

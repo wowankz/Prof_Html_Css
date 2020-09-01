@@ -531,7 +531,7 @@
         <main class="main">
             <div class="catalog">
                 <form
-                    oninput="minResult.value = '$'+ min.value; maxResult.value = '$'+ max.value; sortBy.value = sort.value; showValue.value = show.value"
+                    oninput="barRangeMin.value = min.value; barRangeMax.value = max.value ;minResult.value = '$'+ min.value; maxResult.value = '$'+ max.value; sortBy.value = sort.value; showValue.value = show.value"
                     action="" class="catalog-form">
                     <div class="catalog-form__trending">
                         <h3 class="catalog-form__heading">Trending now</h3>
@@ -592,14 +592,22 @@
                         <h3 class="catalog-form__heading">PRICE</h3>
                         <div class="catalog-form__range-inputs">
                             <div class="catalog-form__range-wrap">
-                                <input name="min" type="range" min="0" max="500" step="10" value="100"
-                                    class="catalog-form__range-min"></div>
-                            <input name="max" type="range" min="500" max="1000" step="10" value="400"
-                                class="catalog-form__range-max">
+                                <input name="min" type="range" min="0" max="390" step="10" value="52"
+                                    class="catalog-form__range-min">
+                                <meter class="catalog-form__meter-min" id="barRangeMin" max=390 min="0"
+                                    value="52"></meter>
+                            </div>
+                            <div class="catalog-form__range-wrap">
+                                <input name="max" type="range" min="400" max="800" step="10" value="40"
+                                    class="catalog-form__range-max">
+                                <meter class="catalog-form__meter-max" id="barRangeMax" max=800 min="400"
+                                    value="400"></meter>
+                            </div>
+
                         </div>
                         <div class="catalog-form__range-outputs">
-                            <output name="minResult" for="min" class="catalog-form__output-min">100</output>
-                            <output name="maxResult" for="max" class="catalog-form__output-max">400</output>
+                            <output name="minResult" for="min" class="catalog-form__output-min">$52</output>
+                            <output name="maxResult" for="max" class="catalog-form__output-max">$400</output>
                         </div>
                     </div>
 
