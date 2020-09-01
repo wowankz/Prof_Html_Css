@@ -114,6 +114,9 @@
       flex-wrap: wrap;
       padding-top: 6rem;
       line-height: 1.6rem;
+      .card {
+        @include product-card;
+      }
     }
 
     &__button {

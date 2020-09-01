@@ -190,6 +190,7 @@
       }
 
       &__link {
+        display: inline-block;
         color: #898989;
         font-size: 1.6rem;
         font-weight: 400;
@@ -198,6 +199,7 @@
         transition: 0.3s;
         &:hover {
           color: $extra-color;
+          transform: translateX(0.12rem);
         }
       }
     }
@@ -243,6 +245,7 @@
     &:hover {
       background-color: $extra-color;
       color: #f7f7f8;
+      transform: scale(1.1);
     }
   }
 }
