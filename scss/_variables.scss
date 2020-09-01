@@ -62,11 +62,11 @@ $shadow-color: rgba(0, 0, 0, 0.16);
   width: 26.1rem;
   margin: 1.6rem 0;
   position: relative;
-  transition: 0.4s;
+  transition: 0.2s;
   &:hover {
     background-color: #ffffff;
     box-shadow: 0 0.5rem 0.8rem 0 $shadow-color;
-    transform: scale(1.05);
+    transform: scale(1.02);
     .card__stars {
       display: block;
       opacity: 1;
