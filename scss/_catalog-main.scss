@@ -7,25 +7,18 @@
   padding-top: 5.9rem;
   justify-content: space-between;
   .aside-nav {
-    .aside-details {
+    .aside-menu {
       width: 24.3rem;
       cursor: pointer;
       margin-bottom: 1.8rem;
-      &[open] {
-        summary {
-          color: #ef5b70;
-          &::after {
-            content: "\f0d8";
-            color: #ef5b70;
-          }
-        }
-        .aside-details__drop-menu {
-          animation-name: slideDown;
-          animation-delay: 0s;
-          animation-duration: 0.6s;
-        }
+      & > input[type="checkbox"]:checked + label {
+        color: $extra-color;
+      }
+      & > input[type="checkbox"]:checked ~ .aside-menu__drop-menu {
+        height: 46rem;
       }
       &__heading {
+        display: flex;
         color: #6f6e6e;
         font-size: 1.4rem;
         font-weight: 700;
@@ -35,15 +28,6 @@
         padding: 1.2rem 1.1rem 1.5rem;
         outline: none;
         position: relative;
-        &::-webkit-details-marker {
-          display: none;
-        }
-        &::-moz-list-bullet {
-          list-style-type: none;
-        }
-        &::before {
-          content: none;
-        }
         &::after {
           content: "\f0d7";
           font-family: "Font Awesome 5 Free";
@@ -58,6 +42,8 @@
 
       &__drop-menu {
         overflow: hidden;
+        transition-duration: 0.5s;
+        height: 0;
       }
 
       &__nav {
@@ -78,9 +64,23 @@
         color: #6f6e6e;
         transition: 0.2s;
         display: inline-block;
+        position: relative;
+        &::after {
+          content: "";
+          width: 0;
+          height: 0.2rem;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          background-color: $extra-color;
+          transition-duration: 0.4s;
+        }
         &:hover {
           color: $extra-color;
-          transform: translate(0.12rem, 0);
+          &::after {
+            width: 100%;
+            left: 0;
+          }
         }
       }
     }
@@ -451,6 +451,7 @@
         }
 
         &__sort-input {
+          display: none;
         }
 
         &__show {
@@ -606,6 +607,7 @@
     }
   }
 }
+
 .feature {
   display: flex;
   justify-content: space-between;
@@ -649,14 +651,5 @@
     text-align: center;
     letter-spacing: 0.03em;
     line-height: 2.4rem;
-  }
-}
-@keyframes slideDown {
-  0% {
-    height: 0;
-  }
-
-  100% {
-    height: 45rem;
   }
 }

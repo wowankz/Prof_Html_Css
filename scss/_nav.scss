@@ -43,6 +43,7 @@
     list-style-type: none;
     position: relative;
     border-bottom: 0.3rem solid transparent;
+    transition-duration: 0.5s;
     &:not(:last-child) {
       margin-right: 0.4rem;
     }
@@ -57,6 +58,7 @@
 
     &:hover {
       border-bottom: 0.3rem solid $extra-color;
+
       &:not(:first-child)::after {
         content: "";
         position: absolute;

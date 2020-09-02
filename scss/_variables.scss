@@ -29,6 +29,7 @@ $shadow-color: rgba(0, 0, 0, 0.16);
       font-weight: 400;
       &:not(:last-child)::after {
         content: "/";
+        padding: 0 0.05rem;
       }
       &:last-child {
         font-weight: 700;
@@ -45,7 +46,8 @@ $shadow-color: rgba(0, 0, 0, 0.16);
     background-color: $extra-color - 33;
   }
   &:active {
-    box-shadow: 0.1rem 0.1rem 0.3rem 0rem #4a4747;
+    //box-shadow: 0.1rem 0.1rem 0.3rem 0rem #4a4747;
+    box-shadow: none;
   }
 }
 

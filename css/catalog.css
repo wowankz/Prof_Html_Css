@@ -87,8 +87,8 @@ a {
 }
 
 .button:active {
-  -webkit-box-shadow: 0.1rem 0.1rem 0.3rem 0rem #4a4747;
-          box-shadow: 0.1rem 0.1rem 0.3rem 0rem #4a4747;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .drop-menu {
@@ -130,6 +130,7 @@ a {
 }
 
 .drop-menu__link {
+  position: relative;
   font-size: 1.4rem;
   color: #4f4f4f;
   letter-spacing: 0.03em;
@@ -140,10 +141,25 @@ a {
   display: inline-block;
 }
 
+.drop-menu__link::after {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: #f16d7f;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
 .drop-menu__link:hover:not(:first-child) {
   color: #f16d7f;
-  -webkit-transform: translate(0.12rem, 0);
-          transform: translate(0.12rem, 0);
+}
+
+.drop-menu__link:hover:not(:first-child)::after {
+  width: 100%;
+  left: 0;
 }
 
 .drop-menu__heading {
@@ -796,6 +812,8 @@ input::-webkit-calendar-picker-indicator {
   list-style-type: none;
   position: relative;
   border-bottom: 0.3rem solid transparent;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .menu__item:not(:last-child) {
@@ -923,6 +941,7 @@ input::-webkit-calendar-picker-indicator {
 
 .breadcrumb__nav-link:not(:last-child)::after {
   content: "/";
+  padding: 0 0.05rem;
 }
 
 .breadcrumb__nav-link:last-child {
@@ -940,31 +959,24 @@ input::-webkit-calendar-picker-indicator {
           justify-content: space-between;
 }
 
-.wrap .aside-nav .aside-details {
+.wrap .aside-nav .aside-menu {
   width: 24.3rem;
   cursor: pointer;
   margin-bottom: 1.8rem;
 }
 
-.wrap .aside-nav .aside-details[open] summary {
-  color: #ef5b70;
+.wrap .aside-nav .aside-menu > input[type="checkbox"]:checked + label {
+  color: #f16d7f;
 }
 
-.wrap .aside-nav .aside-details[open] summary::after {
-  content: "\f0d8";
-  color: #ef5b70;
+.wrap .aside-nav .aside-menu > input[type="checkbox"]:checked ~ .aside-menu__drop-menu {
+  height: 46rem;
 }
 
-.wrap .aside-nav .aside-details[open] .aside-details__drop-menu {
-  -webkit-animation-name: slideDown;
-          animation-name: slideDown;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-duration: 0.6s;
-          animation-duration: 0.6s;
-}
-
-.wrap .aside-nav .aside-details__heading {
+.wrap .aside-nav .aside-menu__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #6f6e6e;
   font-size: 1.4rem;
   font-weight: 700;
@@ -976,19 +988,7 @@ input::-webkit-calendar-picker-indicator {
   position: relative;
 }
 
-.wrap .aside-nav .aside-details__heading::-webkit-details-marker {
-  display: none;
-}
-
-.wrap .aside-nav .aside-details__heading::-moz-list-bullet {
-  list-style-type: none;
-}
-
-.wrap .aside-nav .aside-details__heading::before {
-  content: none;
-}
-
-.wrap .aside-nav .aside-details__heading::after {
+.wrap .aside-nav .aside-menu__heading::after {
   content: "\f0d7";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -999,35 +999,54 @@ input::-webkit-calendar-picker-indicator {
   text-transform: uppercase;
 }
 
-.wrap .aside-nav .aside-details__drop-menu {
+.wrap .aside-nav .aside-menu__drop-menu {
   overflow: hidden;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  height: 0;
 }
 
-.wrap .aside-nav .aside-details__nav {
+.wrap .aside-nav .aside-menu__nav {
   padding: 2.2rem 0 0 1.2rem;
 }
 
-.wrap .aside-nav .aside-details__nav-list {
+.wrap .aside-nav .aside-menu__nav-list {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 3.3rem;
 }
 
-.wrap .aside-nav .aside-details__nav-item {
+.wrap .aside-nav .aside-menu__nav-item {
   list-style-type: none;
 }
 
-.wrap .aside-nav .aside-details__nav-link {
+.wrap .aside-nav .aside-menu__nav-link {
   color: #6f6e6e;
   -webkit-transition: 0.2s;
   transition: 0.2s;
   display: inline-block;
+  position: relative;
 }
 
-.wrap .aside-nav .aside-details__nav-link:hover {
+.wrap .aside-nav .aside-menu__nav-link::after {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: #f16d7f;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
+.wrap .aside-nav .aside-menu__nav-link:hover {
   color: #f16d7f;
-  -webkit-transform: translate(0.12rem, 0);
-          transform: translate(0.12rem, 0);
+}
+
+.wrap .aside-nav .aside-menu__nav-link:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .wrap .main {
@@ -1466,6 +1485,10 @@ input::-webkit-calendar-picker-indicator {
   color: #f16d7f;
 }
 
+.wrap .main .catalog-form__sort-input {
+  display: none;
+}
+
 .wrap .main .catalog-form__show {
   height: 3rem;
   border: 0.1rem solid #ebebeb;
@@ -1853,15 +1876,6 @@ input::-webkit-calendar-picker-indicator {
   line-height: 2.4rem;
 }
 
-@keyframes slideDown {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 45rem;
-  }
-}
-
 .footer__subscribe {
   height: 43.8rem;
   background-image: url(../images/subscribe_img.jpg);
@@ -2054,8 +2068,8 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .footer__subscribe-right .right__form-button:active {
-  -webkit-box-shadow: 0.1rem 0.1rem 0.3rem 0rem #4a4747;
-          box-shadow: 0.1rem 0.1rem 0.3rem 0rem #4a4747;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .footer-content {
@@ -2117,6 +2131,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .footer-content .footer-menu__link {
+  position: relative;
   display: inline-block;
   color: #898989;
   font-size: 1.6rem;
@@ -2127,10 +2142,25 @@ input::-webkit-calendar-picker-indicator {
   transition: 0.2s;
 }
 
+.footer-content .footer-menu__link::after {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: #f16d7f;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
 .footer-content .footer-menu__link:hover {
   color: #f16d7f;
-  -webkit-transform: translateX(0.12rem);
-          transform: translateX(0.12rem);
+}
+
+.footer-content .footer-menu__link:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .footer__copyright {

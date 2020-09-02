@@ -87,8 +87,8 @@ a {
 }
 
 .button:active {
-  -webkit-box-shadow: 0.1rem 0.1rem 0.3rem 0rem #4a4747;
-          box-shadow: 0.1rem 0.1rem 0.3rem 0rem #4a4747;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .drop-menu {
@@ -130,6 +130,7 @@ a {
 }
 
 .drop-menu__link {
+  position: relative;
   font-size: 1.4rem;
   color: #4f4f4f;
   letter-spacing: 0.03em;
@@ -140,10 +141,25 @@ a {
   display: inline-block;
 }
 
+.drop-menu__link::after {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: #f16d7f;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+}
+
 .drop-menu__link:hover:not(:first-child) {
   color: #f16d7f;
-  -webkit-transform: translate(0.12rem, 0);
-          transform: translate(0.12rem, 0);
+}
+
+.drop-menu__link:hover:not(:first-child)::after {
+  width: 100%;
+  left: 0;
 }
 
 .drop-menu__heading {
@@ -796,6 +812,8 @@ input::-webkit-calendar-picker-indicator {
   list-style-type: none;
   position: relative;
   border-bottom: 0.3rem solid transparent;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .menu__item:not(:last-child) {
@@ -1471,8 +1489,8 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .footer__subscribe-right .right__form-button:active {
-  -webkit-box-shadow: 0.1rem 0.1rem 0.3rem 0rem #4a4747;
-          box-shadow: 0.1rem 0.1rem 0.3rem 0rem #4a4747;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .footer-content {
@@ -1534,6 +1552,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .footer-content .footer-menu__link {
+  position: relative;
   display: inline-block;
   color: #898989;
   font-size: 1.6rem;
@@ -1544,10 +1563,25 @@ input::-webkit-calendar-picker-indicator {
   transition: 0.2s;
 }
 
+.footer-content .footer-menu__link::after {
+  content: "";
+  width: 0;
+  height: 0.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: #f16d7f;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
 .footer-content .footer-menu__link:hover {
   color: #f16d7f;
-  -webkit-transform: translateX(0.12rem);
-          transform: translateX(0.12rem);
+}
+
+.footer-content .footer-menu__link:hover::after {
+  width: 100%;
+  left: 0;
 }
 
 .footer__copyright {
