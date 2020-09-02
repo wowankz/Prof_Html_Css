@@ -196,7 +196,7 @@
         font-weight: 400;
         letter-spacing: 0.04rem;
         line-height: 4.5rem;
-        transition: 0.3s;
+        transition: 0.2s;
         &:hover {
           color: $extra-color;
           transform: translateX(0.12rem);
@@ -238,7 +238,7 @@
     background-color: #fff;
     letter-spacing: 0.03em;
     line-height: 4.2rem;
-    transition: 0.3s;
+    transition: all 0.2s;
     &:not(:last-child) {
       margin-right: 0.8rem;
     }
