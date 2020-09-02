@@ -19,8 +19,9 @@
                 bran<span class="logo__last-letter">d</span>
             </a>
             <form class="header__form">
-                <details class="header__form-browse">
-                    <summary class="header__form-summary">Browse</summary>
+                <div class="header__form-browse">
+                    <input type="checkbox" name="browse" id="browse" hidden>
+                    <label class="header__form-summary" for="browse">Browse</label>
                     <div class="drop-menu">
                         <div class="drop-menu__overflow">
                             <div class="drop-menu__block">
@@ -56,7 +57,7 @@
                             </div>
                         </div>
                     </div>
-                </details>
+                </div>
                 <input type="text" class="header__form-input" placeholder="Search for Item...">
                 <button class="header__form-button"><i class="fas fa-search"></i></button>
             </form>

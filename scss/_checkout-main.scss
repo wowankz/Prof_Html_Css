@@ -107,11 +107,7 @@
       background-color: #fff;
       padding: 1.6rem 5rem;
       margin-top: 1.5rem;
-      &:hover {
-        color: $extra-color;
-        border: 0.1rem solid $extra-color;
-        box-shadow: 0 0 1rem 0.2rem $shadow-color;
-      }
+      @include hover-white-button;
       &_left {
         margin-top: 1.7rem;
       }

@@ -270,46 +270,42 @@ input::-webkit-calendar-picker-indicator {
   background-color: #cdcdcc;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#f5f5f5));
   background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
+}
+
+.header__form-browse .header__form-summary {
   cursor: pointer;
 }
 
-.header__form-browse[open] summary {
+.header__form-browse > input[name="browse"]:checked + .header__form-summary {
   color: #f16d7f;
 }
 
-.header__form-browse[open] summary::after {
+.header__form-browse > input[name="browse"]:checked + .header__form-summary::after {
   content: "\f0d8";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: #f16d7f;
 }
 
-.header__form-browse[open] .drop-menu {
-  -webkit-animation-name: slideDown;
-          animation-name: slideDown;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
+.header__form-browse > input[name="browse"]:checked ~ .drop-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 57.8rem;
   width: 28.6rem;
+  opacity: 1;
+  visibility: visible;
 }
 
-.header__form-browse[open] .drop-menu .drop-menu__overflow {
-  -webkit-animation-name: slideDown;
-          animation-name: slideDown;
-  -webkit-animation-delay: 0s;
-          animation-delay: 0s;
-  -webkit-animation-duration: 0.3s;
-          animation-duration: 0.3s;
+.header__form-browse > input[name="browse"]:checked ~ .drop-menu .drop-menu__overflow {
+  height: 57.6rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  overflow: hidden;
+  padding: 0.8rem;
 }
 
-.header__form-browse[open] .drop-menu:hover .drop-menu__overflow {
+.header__form-browse > input[name="browse"]:checked ~ .drop-menu:hover .drop-menu__overflow {
   overflow-y: auto;
   margin-right: -2rem;
   display: -webkit-box;
@@ -317,8 +313,19 @@ input::-webkit-calendar-picker-indicator {
   display: flex;
 }
 
-.header__form-browse:not([open]) .drop-menu {
-  opacity: 1;
+.header__form-browse .drop-menu {
+  opacity: 0;
+  height: 0;
+  visibility: hidden;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.header__form-browse .drop-menu__overflow {
+  height: 0;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  overflow: hidden;
 }
 
 .header__form-summary {
@@ -332,18 +339,6 @@ input::-webkit-calendar-picker-indicator {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 3.8rem;
-}
-
-.header__form-summary::-webkit-details-marker {
-  display: none;
-}
-
-.header__form-summary::-moz-list-bullet {
-  list-style-type: none;
-}
-
-.header__form-summary::before {
-  content: none;
 }
 
 .header__form-summary::after {
@@ -622,6 +617,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .drop-cart__product-price {
+  font-weight: 700;
   max-width: 12rem;
   font-size: 1rem;
   color: #f16d7f;
@@ -632,12 +628,14 @@ input::-webkit-calendar-picker-indicator {
   font-size: 1.2rem;
   color: #f16d7f;
   text-transform: uppercase;
+  margin-right: 0.1rem;
 }
 
 .drop-cart__product-sum {
   font-size: 1.2rem;
   color: #f16d7f;
   text-transform: uppercase;
+  margin-left: 0.1rem;
 }
 
 .drop-cart__product-close {
@@ -648,13 +646,15 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .drop-cart__product-close .fa-times-circle {
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .drop-cart__product-close .fa-times-circle:hover {
   color: #f16d7f;
   border-radius: 50%;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .drop-cart__total {
@@ -711,6 +711,11 @@ input::-webkit-calendar-picker-indicator {
           box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.16);
 }
 
+.drop-cart__button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .drop-cart::after {
   content: "";
   position: absolute;
@@ -740,24 +745,6 @@ input::-webkit-calendar-picker-indicator {
 @media screen and (max-width: 1140px) {
   .drop-cart::before {
     left: 8rem;
-  }
-}
-
-@-webkit-keyframes slideDown {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 57.3rem;
-  }
-}
-
-@keyframes slideDown {
-  0% {
-    height: 0;
-  }
-  100% {
-    height: 57.3rem;
   }
 }
 

@@ -24,37 +24,50 @@
     border-right: none;
     background-color: #cdcdcc;
     background-image: linear-gradient(to bottom, #f9f9f9 0%, #f5f5f5 100%);
-    cursor: pointer;
-    &[open] summary {
-      color: $extra-color;
+
+    .header__form-summary {
+      cursor: pointer;
     }
-    &[open] summary::after {
-      content: "\f0d8";
-      font-family: "Font Awesome 5 Free";
-      font-weight: 900;
+    & > input[name="browse"]:checked + .header__form-summary {
       color: $extra-color;
-    }
-    &[open] .drop-menu {
-      animation-name: slideDown;
-      animation-delay: 0s;
-      animation-duration: 0.3s;
-      display: flex;
-      height: 57.8rem;
-      width: 28.6rem;
-      & .drop-menu__overflow {
-        animation-name: slideDown;
-        animation-delay: 0s;
-        animation-duration: 0.3s;
-        flex-wrap: wrap;
+      &::after {
+        content: "\f0d8";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: $extra-color;
       }
-      &:hover .drop-menu__overflow {
-        overflow-y: auto;
-        margin-right: -2rem;
+    }
+
+    & > input[name="browse"]:checked {
+      & ~ .drop-menu {
         display: flex;
+        height: 57.8rem;
+        width: 28.6rem;
+        opacity: 1;
+        visibility: visible;
+        & .drop-menu__overflow {
+          height: 57.6rem;
+          flex-wrap: wrap;
+          overflow: hidden;
+          padding: 0.8rem;
+        }
+        &:hover .drop-menu__overflow {
+          overflow-y: auto;
+          margin-right: -2rem;
+          display: flex;
+        }
       }
     }
-    &:not([open]) .drop-menu {
-      opacity: 1;
+    .drop-menu {
+      opacity: 0;
+      height: 0;
+      visibility: hidden;
+      transition-duration: 0.3s;
+    }
+    .drop-menu__overflow {
+      height: 0;
+      transition-duration: 0.3s;
+      overflow: hidden;
     }
   }
 
@@ -67,15 +80,6 @@
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 3.8rem;
-    &::-webkit-details-marker {
-      display: none;
-    }
-    &::-moz-list-bullet {
-      list-style-type: none;
-    }
-    &::before {
-      content: none;
-    }
     &::after {
       content: "\f0d7";
       font-family: "Font Awesome 5 Free";
@@ -275,6 +279,7 @@
     }
 
     &-price {
+      font-weight: 700;
       max-width: 12rem;
       font-size: 1rem;
       color: $extra-color;
@@ -285,12 +290,14 @@
       font-size: 1.2rem;
       color: #f16d7f;
       text-transform: uppercase;
+      margin-right: 0.1rem;
     }
 
     &-sum {
       font-size: 1.2rem;
       color: $extra-color;
       text-transform: uppercase;
+      margin-left: 0.1rem;
     }
 
     &-close {
@@ -299,12 +306,13 @@
       text-transform: uppercase;
       padding-top: 3.7rem;
       .fa-times-circle {
-        transition: all 0.4s;
+        transition: all 0.2s;
       }
 
       .fa-times-circle:hover {
         color: #f16d7f;
         border-radius: 50%;
+        transform: scale(1.2);
       }
     }
   }
@@ -343,11 +351,7 @@
     background-color: #ffffff;
     border: 0.1rem solid #eaeaea;
     transition: all 0.4s;
-    &:hover {
-      color: $extra-color;
-      border: 0.1rem solid $extra-color;
-      box-shadow: 0 0 1rem 0.2rem $shadow-color;
-    }
+    @include hover-white-button;
   }
   &::after {
     content: "";
@@ -378,15 +382,3 @@
     }
   }
 }
-
-// -------------------------------------
-@keyframes slideDown {
-  0% {
-    height: 0;
-  }
-
-  100% {
-    height: 57.3rem;
-  }
-}
-// ----------------------------------
