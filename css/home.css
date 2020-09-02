@@ -144,7 +144,7 @@ a {
 .drop-menu__link::after {
   content: "";
   width: 0;
-  height: 0.2rem;
+  height: 0.1rem;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -163,7 +163,7 @@ a {
 .drop-menu__link:hover::after {
   width: 100%;
   left: 0;
-  height: 0.2rem;
+  height: 0.1rem;
 }
 
 .drop-menu__link-heading:hover::after {
@@ -1575,13 +1575,16 @@ input::-webkit-calendar-picker-indicator {
 .footer-content .footer-menu__link::after {
   content: "";
   width: 0;
-  height: 0.2rem;
+  height: 0.1rem;
   position: absolute;
   bottom: 0;
   left: 50%;
   background-color: #f16d7f;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer-content .footer-menu__link:hover {
@@ -1591,6 +1594,7 @@ input::-webkit-calendar-picker-indicator {
 .footer-content .footer-menu__link:hover::after {
   width: 100%;
   left: 0;
+  height: 0.1rem;
 }
 
 .footer__copyright {

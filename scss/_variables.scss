@@ -168,3 +168,25 @@ $shadow-color: rgba(0, 0, 0, 0.16);
     }
   }
 }
+
+@mixin hover-link {
+  &::after {
+    content: "";
+    width: 0;
+    height: 0.1rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    background-color: $extra-color;
+    transition-duration: 0.4s;
+    display: flex;
+  }
+  &:hover {
+    color: $extra-color;
+    &::after {
+      width: 100%;
+      left: 0;
+      height: 0.1rem;
+    }
+  }
+}

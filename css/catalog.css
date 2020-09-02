@@ -144,7 +144,7 @@ a {
 .drop-menu__link::after {
   content: "";
   width: 0;
-  height: 0.2rem;
+  height: 0.1rem;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -163,7 +163,7 @@ a {
 .drop-menu__link:hover::after {
   width: 100%;
   left: 0;
-  height: 0.2rem;
+  height: 0.1rem;
 }
 
 .drop-menu__link-heading:hover::after {
@@ -978,6 +978,11 @@ input::-webkit-calendar-picker-indicator {
   color: #f16d7f;
 }
 
+.wrap .aside-nav .aside-menu > input[type="checkbox"]:checked + label::after {
+  content: "\f0d8";
+  color: #f16d7f;
+}
+
 .wrap .aside-nav .aside-menu > input[type="checkbox"]:checked ~ .aside-menu__drop-menu {
   height: 46rem;
 }
@@ -995,6 +1000,8 @@ input::-webkit-calendar-picker-indicator {
   padding: 1.2rem 1.1rem 1.5rem;
   outline: none;
   position: relative;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .wrap .aside-nav .aside-menu__heading::after {
@@ -1006,6 +1013,12 @@ input::-webkit-calendar-picker-indicator {
   color: #6f6e6e;
   font-size: 1.6rem;
   text-transform: uppercase;
+}
+
+.wrap .aside-nav .aside-menu__heading:hover {
+  color: #f16d7f;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
 }
 
 .wrap .aside-nav .aside-menu__drop-menu {
@@ -1040,13 +1053,16 @@ input::-webkit-calendar-picker-indicator {
 .wrap .aside-nav .aside-menu__nav-link::after {
   content: "";
   width: 0;
-  height: 0.2rem;
+  height: 0.1rem;
   position: absolute;
   bottom: 0;
   left: 50%;
   background-color: #f16d7f;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .wrap .aside-nav .aside-menu__nav-link:hover {
@@ -1056,6 +1072,7 @@ input::-webkit-calendar-picker-indicator {
 .wrap .aside-nav .aside-menu__nav-link:hover::after {
   width: 100%;
   left: 0;
+  height: 0.1rem;
 }
 
 .wrap .main {
@@ -1589,6 +1606,10 @@ input::-webkit-calendar-picker-indicator {
 
 .wrap .main .catalog-form__show-label:hover {
   color: #f16d7f;
+}
+
+.wrap .main .catalog-form__show-input {
+  display: none;
 }
 
 .wrap .main .catalog-products {
@@ -2154,13 +2175,16 @@ input::-webkit-calendar-picker-indicator {
 .footer-content .footer-menu__link::after {
   content: "";
   width: 0;
-  height: 0.2rem;
+  height: 0.1rem;
   position: absolute;
   bottom: 0;
   left: 50%;
   background-color: #f16d7f;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer-content .footer-menu__link:hover {
@@ -2170,6 +2194,7 @@ input::-webkit-calendar-picker-indicator {
 .footer-content .footer-menu__link:hover::after {
   width: 100%;
   left: 0;
+  height: 0.1rem;
 }
 
 .footer__copyright {

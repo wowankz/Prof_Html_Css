@@ -13,6 +13,10 @@
       margin-bottom: 1.8rem;
       & > input[type="checkbox"]:checked + label {
         color: $extra-color;
+        &::after {
+          content: "\f0d8";
+          color: $extra-color;
+        }
       }
       & > input[type="checkbox"]:checked ~ .aside-menu__drop-menu {
         height: 46rem;
@@ -28,6 +32,7 @@
         padding: 1.2rem 1.1rem 1.5rem;
         outline: none;
         position: relative;
+        transition-duration: 0.5s;
         &::after {
           content: "\f0d7";
           font-family: "Font Awesome 5 Free";
@@ -37,6 +42,10 @@
           color: #6f6e6e;
           font-size: 1.6rem;
           text-transform: uppercase;
+        }
+        &:hover {
+          color: $extra-color;
+          transition-duration: 0.3s;
         }
       }
 
@@ -65,23 +74,7 @@
         transition: 0.2s;
         display: inline-block;
         position: relative;
-        &::after {
-          content: "";
-          width: 0;
-          height: 0.2rem;
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          background-color: $extra-color;
-          transition-duration: 0.4s;
-        }
-        &:hover {
-          color: $extra-color;
-          &::after {
-            width: 100%;
-            left: 0;
-          }
-        }
+        @include hover-link;
       }
     }
   }
@@ -535,6 +528,7 @@
         }
 
         &__show-input {
+          display: none;
         }
       }
       &-products {
