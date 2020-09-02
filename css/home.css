@@ -151,15 +151,23 @@ a {
   background-color: #f16d7f;
   -webkit-transition-duration: 0.4s;
           transition-duration: 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.drop-menu__link:hover:not(:first-child) {
+.drop-menu__link:hover {
   color: #f16d7f;
 }
 
-.drop-menu__link:hover:not(:first-child)::after {
+.drop-menu__link:hover::after {
   width: 100%;
   left: 0;
+  height: 0.2rem;
+}
+
+.drop-menu__link-heading:hover::after {
+  width: 0;
 }
 
 .drop-menu__heading {
@@ -806,11 +814,11 @@ input::-webkit-calendar-picker-indicator {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .menu__item {
   list-style-type: none;
-  position: relative;
   border-bottom: 0.3rem solid transparent;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
@@ -824,40 +832,8 @@ input::-webkit-calendar-picker-indicator {
   border-bottom: 0.3rem solid #f16d7f;
 }
 
-.menu__item::after, .menu__item::before {
-  content: "";
-  opacity: 0;
-}
-
 .menu__item:hover {
   border-bottom: 0.3rem solid #f16d7f;
-}
-
-.menu__item:hover:not(:first-child)::after {
-  content: "";
-  position: absolute;
-  left: 45%;
-  bottom: -0.9rem;
-  border-right: 0.8rem solid transparent;
-  border-left: 0.8rem solid transparent;
-  border-bottom: 0.8rem solid #ffffff;
-  z-index: 9999;
-  opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.menu__item:hover:not(:first-child)::before {
-  content: "";
-  position: absolute;
-  left: 45%;
-  bottom: -0.8rem;
-  border-right: 0.8rem solid transparent;
-  border-left: 0.8rem solid transparent;
-  border-bottom: 0.8rem solid #e9e9e9;
-  opacity: 1;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .menu__item:hover .nav__drop-menu:not(.nav__drop-menu_last) {
@@ -891,6 +867,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .menu__link {
+  position: relative;
   display: block;
   cursor: pointer;
   color: #222222;
@@ -901,8 +878,40 @@ input::-webkit-calendar-picker-indicator {
   padding: 1.5rem 2rem 1.9rem;
 }
 
+.menu__link::after, .menu__link::before {
+  content: "";
+  opacity: 0;
+}
+
 .menu__link:hover {
   color: #f16d7f;
+}
+
+.menu__link:hover::after {
+  content: "";
+  position: absolute;
+  left: 45%;
+  bottom: -0.9rem;
+  border-right: 0.8rem solid transparent;
+  border-left: 0.8rem solid transparent;
+  border-bottom: 0.8rem solid #ffffff;
+  z-index: 9999;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu__link:hover::before {
+  content: "";
+  position: absolute;
+  left: 45%;
+  bottom: -0.8rem;
+  border-right: 0.8rem solid transparent;
+  border-left: 0.8rem solid transparent;
+  border-bottom: 0.8rem solid #e9e9e9;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .main .slider {

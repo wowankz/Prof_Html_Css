@@ -111,13 +111,18 @@ a {
       left: 50%;
       background-color: $extra-color;
       transition-duration: 0.4s;
+      display: flex;
     }
-    &:hover:not(:first-child) {
+    &:hover {
       color: $extra-color;
       &::after {
         width: 100%;
         left: 0;
+        height: 0.2rem;
       }
+    }
+    &-heading:hover::after {
+      width: 0;
     }
   }
   &__heading {
