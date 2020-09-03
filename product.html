@@ -123,8 +123,8 @@
     <!-- nav section -->
     <nav class="nav center">
         <ul class="menu ">
-            <li class=" menu__item menu__item_active">
-                <a href="index.html" class="a menu__link">Home</a>
+            <li class=" menu__item ">
+                <a href="index.html" class=" menu__link menu__link_first">Home</a>
 
             </li>
             <li class=" menu__item">
@@ -174,7 +174,7 @@
                     </div>
                 </div>
             </li>
-            <li class=" menu__item">
+            <li class=" menu__item menu__item_active">
                 <a href="catalog.html" class=" menu__link">Women</a>
                 <div class="drop-menu nav__drop-menu">
                     <div class="drop-menu__block ">
@@ -469,7 +469,7 @@
                     <form method="POST" class="product__choose">
                         <div class="product__choose-datalist" data-color="">
                             <label class="product__choose-name" for="color">CHOOSE COLOR</label><br>
-                            <input name="color" list="colors" placeholder="Red">
+                            <input name="color" id="color" list="colors" placeholder="Red">
                             <datalist id="colors">
                                 <option selected value="RED">RED</option>
                                 <option value="RED">
@@ -478,7 +478,7 @@
                         </div>
                         <div class="product__choose-datalist">
                             <label class="product__choose-name" for="size">CHOOSE SIZE</label> <br>
-                            <input name="size" list="sizes" placeholder="XXL">
+                            <input name="size" list="sizes" id="size" placeholder="XXL">
                             <datalist id="sizes">
                                 <option selected value="XXL">
                                 <option value="XL">
@@ -486,7 +486,7 @@
                         </div>
                         <div>
                             <label class="product__choose-name" for="quantity">QUANTITY</label><br>
-                            <input type="number" name="quantity" placeholder="2">
+                            <input type="number" name="quantity" id="quantity" placeholder="2">
                         </div>
                     </form>
                     <a href="#" class="product__button">
@@ -513,7 +513,7 @@
                         <a href="#">
                             <h3 class="card__h3">Mango People T-shirt</h3>
                         </a>
-                        <span class="card__price">$52.00
+                        <div class="card__price">$52.00
                             <div class="card__stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -521,7 +521,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                             </div>
-                        </span>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -536,7 +536,7 @@
                         <a href="#">
                             <h3 class="card__h3">Mango People T-shirt</h3>
                         </a>
-                        <span class="card__price">$52.00
+                        <div class="card__price">$52.00
                             <div class="card__stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -544,7 +544,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                             </div>
-                        </span>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -559,7 +559,7 @@
                         <a href="#">
                             <h3 class="card__h3">Mango People T-shirt</h3>
                         </a>
-                        <span class="card__price">$52.00
+                        <div class="card__price">$52.00
                             <div class="card__stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -567,7 +567,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                             </div>
-                        </span>
+                        </div>
                     </div>
                 </div>
                 <div class="card">
@@ -582,7 +582,7 @@
                         <a href="#">
                             <h3 class="card__h3">Mango People T-shirt</h3>
                         </a>
-                        <span class="card__price">$52.00
+                        <div class="card__price">$52.00
                             <div class="card__stars">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -590,7 +590,7 @@
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star-half-alt"></i>
                             </div>
-                        </span>
+                        </div>
                     </div>
                 </div>
             </div>

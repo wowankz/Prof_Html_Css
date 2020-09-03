@@ -61,13 +61,17 @@
     .drop-menu {
       opacity: 0;
       height: 0;
+      width: 28.6rem;
       visibility: hidden;
-      transition-duration: 0.3s;
+      transition: visibility 0s linear 0.1s, opacity 0s linear 0.1s,
+        height ease-out 0.4s;
     }
     .drop-menu__overflow {
       height: 0;
-      transition-duration: 0.3s;
+      transition: visibility 0s linear 0.1s, opacity 0s linear 0.1s,
+        height ease-out 0.3s;
       overflow: hidden;
+      padding: 0.8rem;
     }
   }
 

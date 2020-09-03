@@ -316,16 +316,18 @@ input::-webkit-calendar-picker-indicator {
 .header__form-browse .drop-menu {
   opacity: 0;
   height: 0;
+  width: 28.6rem;
   visibility: hidden;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  -webkit-transition: visibility 0s linear 0.1s, opacity 0s linear 0.1s, height ease-out 0.4s;
+  transition: visibility 0s linear 0.1s, opacity 0s linear 0.1s, height ease-out 0.4s;
 }
 
 .header__form-browse .drop-menu__overflow {
   height: 0;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  -webkit-transition: visibility 0s linear 0.1s, opacity 0s linear 0.1s, height ease-out 0.3s;
+  transition: visibility 0s linear 0.1s, opacity 0s linear 0.1s, height ease-out 0.3s;
   overflow: hidden;
+  padding: 0.8rem;
 }
 
 .header__form-summary {
@@ -870,11 +872,11 @@ input::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
 
-.menu__link:hover {
+.menu__link:hover:not(.menu__link_first) {
   color: #f16d7f;
 }
 
-.menu__link:hover::after {
+.menu__link:hover:not(.menu__link_first)::after {
   content: "";
   position: absolute;
   left: 45%;
@@ -888,7 +890,7 @@ input::-webkit-calendar-picker-indicator {
   transition: 0.3s;
 }
 
-.menu__link:hover::before {
+.menu__link:hover:not(.menu__link_first)::before {
   content: "";
   position: absolute;
   left: 45%;
@@ -1101,12 +1103,15 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .main .product__property .property {
-  color: #b9b9b9;
   font-size: 1.4rem;
   font-weight: 700;
   line-height: 2.4rem;
   text-transform: uppercase;
   margin: 0 2.2rem;
+}
+
+.main .product__property .property__name {
+  color: #b9b9b9;
 }
 
 .main .product__property .property__value {
@@ -1253,8 +1258,15 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .main .product__button:hover {
-  -webkit-box-shadow: 0 0 0.4rem 0 #f16d7f;
-          box-shadow: 0 0 0.4rem 0 #f16d7f;
+  color: #f16d7f;
+  border: 0.1rem solid #f16d7f;
+  -webkit-box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.16);
+          box-shadow: 0 0 1rem 0.2rem rgba(0, 0, 0, 0.16);
+}
+
+.main .product__button:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .main .like {
@@ -1300,6 +1312,7 @@ input::-webkit-calendar-picker-indicator {
   display: block;
   opacity: 1;
   visibility: visible;
+  line-height: 0;
 }
 
 .main .like__content .card:hover .card__hover {

@@ -121,7 +121,7 @@
       content: "";
       opacity: 0;
     }
-    &:hover {
+    &:hover:not(.menu__link_first) {
       color: $extra-color;
       &::after {
         content: "";

@@ -151,9 +151,12 @@
 
     &__product-close {
       color: #c0c0c0;
-      transition: 0.3s;
-      &:hover {
+      & i {
+        transition: 0.2s;
+      }
+      &:hover i {
         color: $extra-color;
+        transform: scale(1.2);
       }
     }
 
@@ -173,11 +176,7 @@
       text-transform: uppercase;
       padding: 1.8rem 3.9rem;
       transition: all 0.4s;
-      &:hover {
-        color: $extra-color;
-        border: 0.1rem solid $extra-color;
-        box-shadow: 0 0 1rem 0.2rem $shadow-color;
-      }
+      @include hover-white-button;
       &_red {
         font-size: 1.6rem;
         font-weight: 700;
@@ -282,11 +281,7 @@
       border: 0.1rem solid #eaeaea;
       padding: 1.2rem 1.4rem;
       transition: all 0.4s;
-      &:hover {
-        color: $extra-color;
-        border: 0.1rem solid $extra-color;
-        box-shadow: 0 0 1rem 0.2rem $shadow-color;
-      }
+      @include hover-white-button;
     }
 
     &__form-discount {
