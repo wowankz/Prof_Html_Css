@@ -257,14 +257,7 @@
       font-size: 1.2rem;
       color: $stars-color;
       text-transform: uppercase;
-
-      & .fa-star {
-        transition: all 0.3s;
-      }
-      & i:hover {
-        color: $extra-color;
-        cursor: pointer;
-      }
+      @include stars-hover;
     }
 
     &-price {

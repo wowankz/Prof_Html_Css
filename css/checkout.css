@@ -588,14 +588,16 @@ input::-webkit-calendar-picker-indicator {
   text-transform: uppercase;
 }
 
-.drop-cart__product-stars .fa-star {
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+.drop-cart__product-stars i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .drop-cart__product-stars i:hover {
-  color: #f16d7f;
   cursor: pointer;
+  color: #d99a20;
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .drop-cart__product-price {
