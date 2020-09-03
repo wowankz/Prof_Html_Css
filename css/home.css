@@ -1154,11 +1154,14 @@ input::-webkit-calendar-picker-indicator {
   transition: 0.2s;
 }
 
+.main .products__content .card__stars i {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .main .products__content .card__stars i:hover {
   cursor: pointer;
   color: #d99a20;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
 }

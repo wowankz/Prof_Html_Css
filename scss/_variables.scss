@@ -171,11 +171,12 @@ $shadow-color: rgba(0, 0, 0, 0.16);
     opacity: 0;
     visibility: hidden;
     transition: 0.2s;
-
+    & i {
+      transition: 0.3s;
+    }
     & i:hover {
       cursor: pointer;
       color: darken($stars-color, 10%);
-      transition: 0.3s;
       transform: scale(1.3);
     }
   }
