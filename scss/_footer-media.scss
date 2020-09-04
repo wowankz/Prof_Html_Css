@@ -1,0 +1,74 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .footer {
+    &__subscribe {
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      &-left {
+        border-right: none;
+        & .left__content {
+          width: auto;
+        }
+        & .left__quote {
+          font-size: 2.2rem;
+        }
+
+        & .left__box-name {
+          font-size: 1.8rem;
+          padding-top: 2rem;
+          & .left__name_color {
+            font-size: 2.1rem;
+          }
+        }
+
+        & .left__link-box {
+          justify-content: center;
+          & .left__link {
+            width: 6.8rem;
+          }
+        }
+      }
+
+      &-right {
+        display: flex;
+        & .right {
+          flex-basis: 100%;
+          padding: 9rem 9.2rem 9rem 9.2rem;
+          font-size: 2rem;
+          &__form {
+            align-self: center;
+            height: 6rem;
+            &-input {
+              background-color: #b2b2b2;
+              width: 30.2rem;
+              height: inherit;
+              font-size: 2rem;
+              &::placeholder {
+                color: #ffffff;
+              }
+            }
+
+            &-button {
+              font-size: 2rem;
+              padding: 0.5rem 2rem;
+            }
+          }
+
+          &__h2 {
+            font-size: 3.1rem;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}

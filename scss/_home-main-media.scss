@@ -16,4 +16,77 @@
       margin-top: 16.4rem;
     }
   }
+  .products {
+    .card {
+      width: auto;
+      &__h3 {
+        font-size: 1.8rem;
+      }
+    }
+    &__h2 {
+      font-size: 5rem;
+      line-height: normal;
+    }
+
+    &__desc {
+      font-size: 2.4rem;
+    }
+
+    &__content {
+      & .card__link {
+        height: 32rem;
+        width: 30.1rem;
+      }
+    }
+
+    &__button {
+      padding: 2.2rem 2.2rem 2.2rem 2.9rem;
+      font-size: 2.5rem;
+      & i {
+        margin-left: 1.8rem;
+        font-size: 2.4rem;
+      }
+    }
+  }
+
+  .feature {
+    &__box {
+      flex-wrap: wrap;
+    }
+
+    &__img {
+      flex-basis: 100%;
+    }
+
+    &__articles {
+      flex-basis: 100%;
+      flex-direction: row;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+
+    &__article {
+      flex-direction: column;
+      align-items: center;
+      &-img {
+        align-self: center;
+        width: 6rem;
+        height: 5rem;
+        margin-bottom: 1rem;
+        object-fit: scale-down;
+      }
+
+      &-content {
+        text-align: center;
+      }
+
+      &-h3 {
+        font-size: 3rem;
+      }
+
+      &-text {
+        font-size: 2rem;
+      }
+    }
+  }
 }

@@ -129,7 +129,7 @@
         &__form-button {
           display: flex;
           justify-content: center;
-          width: 10.4rem;
+          padding: 0px 20px;
           font-size: 1.4rem;
           color: $button-font-color;
           letter-spacing: 0.03em;
@@ -247,3 +247,5 @@
     }
   }
 }
+
+@import "footer-media";

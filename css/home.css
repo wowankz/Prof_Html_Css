@@ -725,7 +725,7 @@ input::-webkit-calendar-picker-indicator {
 
 @media (max-width: 991.98px) {
   .logo {
-    font-size: 4.7rem;
+    font-size: 4.5rem;
   }
   .logo__img {
     width: inherit;
@@ -1338,6 +1338,77 @@ input::-webkit-calendar-picker-indicator {
   .slider__content {
     margin-top: 16.4rem;
   }
+  .products .card {
+    width: auto;
+  }
+  .products .card__h3 {
+    font-size: 1.8rem;
+  }
+  .products__h2 {
+    font-size: 5rem;
+    line-height: normal;
+  }
+  .products__desc {
+    font-size: 2.4rem;
+  }
+  .products__content .card__link {
+    height: 32rem;
+    width: 30.1rem;
+  }
+  .products__button {
+    padding: 2.2rem 2.2rem 2.2rem 2.9rem;
+    font-size: 2.5rem;
+  }
+  .products__button i {
+    margin-left: 1.8rem;
+    font-size: 2.4rem;
+  }
+  .feature__box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .feature__img {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .feature__articles {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .feature__article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .feature__article-img {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 6rem;
+    height: 5rem;
+    margin-bottom: 1rem;
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+  }
+  .feature__article-content {
+    text-align: center;
+  }
+  .feature__article-h3 {
+    font-size: 3rem;
+  }
+  .feature__article-text {
+    font-size: 2rem;
+  }
 }
 
 .footer__subscribe {
@@ -1513,7 +1584,7 @@ input::-webkit-calendar-picker-indicator {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 10.4rem;
+  padding: 0px 20px;
   font-size: 1.4rem;
   color: #ffffff;
   letter-spacing: 0.03em;
@@ -1689,4 +1760,84 @@ input::-webkit-calendar-picker-indicator {
   color: #f7f7f8;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media (max-width: 991.98px) {
+  .footer__subscribe {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__subscribe-left {
+    border-right: none;
+  }
+  .footer__subscribe-left .left__content {
+    width: auto;
+  }
+  .footer__subscribe-left .left__quote {
+    font-size: 2.2rem;
+  }
+  .footer__subscribe-left .left__box-name {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+  }
+  .footer__subscribe-left .left__box-name .left__name_color {
+    font-size: 2.1rem;
+  }
+  .footer__subscribe-left .left__link-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__subscribe-left .left__link-box .left__link {
+    width: 6.8rem;
+  }
+  .footer__subscribe-right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer__subscribe-right .right {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 9rem 9.2rem 9rem 9.2rem;
+    font-size: 2rem;
+  }
+  .footer__subscribe-right .right__form {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    height: 6rem;
+  }
+  .footer__subscribe-right .right__form-input {
+    background-color: #b2b2b2;
+    width: 30.2rem;
+    height: inherit;
+    font-size: 2rem;
+  }
+  .footer__subscribe-right .right__form-input::-webkit-input-placeholder {
+    color: #ffffff;
+  }
+  .footer__subscribe-right .right__form-input:-ms-input-placeholder {
+    color: #ffffff;
+  }
+  .footer__subscribe-right .right__form-input::-ms-input-placeholder {
+    color: #ffffff;
+  }
+  .footer__subscribe-right .right__form-input::placeholder {
+    color: #ffffff;
+  }
+  .footer__subscribe-right .right__form-button {
+    font-size: 2rem;
+    padding: 0.5rem 2rem;
+  }
+  .footer__subscribe-right .right__h2 {
+    font-size: 3.1rem;
+    line-height: normal;
+  }
 }
