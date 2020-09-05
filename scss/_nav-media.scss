@@ -1,14 +1,41 @@
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-}
-
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
-}
-
 // Medium devices (tablets, less than 992px)
 @media (max-width: 991.98px) {
   .menu__link {
     font-size: 1.9rem;
   }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .nav {
+    height: 5.5rem;
+    .menu {
+      position: absolute;
+      justify-content: space-around;
+      background-color: #696969f5;
+      top: 0;
+      right: 101vw;
+      flex-direction: column;
+      bottom: 0;
+      left: -101vw;
+      z-index: 9999;
+      transition-duration: 0.6s;
+      &__link {
+        font-size: 3.9rem;
+        color: gainsboro;
+      }
+    }
+
+    .nav-open {
+      display: flex;
+    }
+
+    .nav-close {
+      display: flex;
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
 }

@@ -32,6 +32,29 @@
       display: none;
     }
   }
+
+  .nav-open {
+    display: none;
+    font-size: 4.5rem;
+    color: #707070;
+  }
+
+  .nav-close {
+    display: none;
+    font-size: 5.5rem;
+    color: #f16d7f;
+    position: absolute;
+    top: 0.5rem;
+    right: 2vw;
+  }
+
+  #nav-drop {
+    display: none;
+    &:checked + .menu {
+      right: 25vw;
+      left: 0;
+    }
+  }
 }
 
 .menu {

@@ -1,9 +1,10 @@
-// Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-}
-
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
+@media screen and (max-width: 1140px) {
+  .category__item {
+    width: 48vw;
+    &_big {
+      width: 48vw;
+    }
+  }
 }
 
 // Medium devices (tablets, less than 992px)
@@ -18,7 +19,7 @@
   }
 
   .category {
-    height: 63rem;
+    height: 70vw;
   }
   .products {
     .card {
@@ -95,11 +96,83 @@
   }
 }
 
-@media screen and (max-width: 1140px) {
-  .category__item {
-    width: 48vw;
-    &_big {
-      width: 48vw;
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .slider {
+    background-position: -10rem;
+
+    &__content {
+      margin-top: 11.4rem;
     }
   }
+
+  .products {
+    .card {
+      width: auto;
+      &__h3 {
+        font-size: 1.8rem;
+      }
+    }
+    &__h2 {
+      font-size: 5rem;
+      line-height: normal;
+    }
+
+    &__desc {
+      font-size: 2.4rem;
+    }
+
+    &__content {
+      & .card__link {
+        height: 52vw;
+        width: 48vw;
+      }
+    }
+  }
+
+  .feature {
+    &__box {
+      flex-wrap: wrap;
+    }
+
+    &__img {
+      flex-basis: 100%;
+    }
+
+    &__articles {
+      flex-basis: 100%;
+      flex-direction: column;
+      padding-right: 0.5rem;
+      padding-left: 2rem;
+    }
+
+    &__article {
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 1.5rem 0;
+      &-img {
+        align-self: flex-start;
+        width: 6rem;
+        height: 5rem;
+        margin-bottom: 1rem;
+        object-fit: scale-down;
+      }
+
+      &-content {
+        text-align: left;
+      }
+
+      &-h3 {
+        font-size: 3rem;
+      }
+
+      &-text {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
 }
