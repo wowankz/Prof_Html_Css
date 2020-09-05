@@ -16,6 +16,10 @@
       margin-top: 16.4rem;
     }
   }
+
+  .category {
+    height: 63rem;
+  }
   .products {
     .card {
       width: auto;
@@ -35,7 +39,7 @@
     &__content {
       & .card__link {
         height: 32rem;
-        width: 30.1rem;
+        width: 28.1rem;
       }
     }
 
@@ -87,6 +91,15 @@
       &-text {
         font-size: 2rem;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .category__item {
+    width: 48vw;
+    &_big {
+      width: 48vw;
     }
   }
 }
