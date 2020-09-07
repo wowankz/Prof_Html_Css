@@ -125,7 +125,7 @@
     &__content {
       & .card__link {
         height: 52vw;
-        width: 48vw;
+        width: 46vw;
       }
     }
   }
@@ -151,7 +151,7 @@
       align-items: flex-start;
       margin: 1.5rem 0;
       &-img {
-        align-self: flex-start;
+        align-self: center;
         width: 6rem;
         height: 5rem;
         margin-bottom: 1rem;
@@ -175,4 +175,44 @@
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+  .slider {
+    height: 29rem;
+    background-blend-mode: overlay;
+    align-items: center;
+    &__content {
+      margin-top: 0;
+    }
+    &__h1 {
+      font-size: 5rem;
+    }
+    &__h2 {
+      font-size: 3.2rem;
+    }
+  }
+
+  .category {
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    .category__item {
+      width: 97vw;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .products {
+    &__content {
+      .card__link {
+        height: auto;
+        width: 95vw;
+      }
+    }
+  }
+
+  .feature {
+    &__img {
+      height: 32.3rem;
+      background-repeat: no-repeat;
+    }
+  }
 }

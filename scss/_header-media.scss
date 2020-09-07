@@ -93,4 +93,21 @@
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+  .header {
+    height: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    &__left {
+      flex-direction: column;
+    }
+
+    &__form {
+      margin-top: 2rem;
+      margin-left: 0;
+    }
+
+    &__right {
+      top: 17rem;
+    }
+  }
 }

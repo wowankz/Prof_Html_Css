@@ -10,7 +10,7 @@
   .nav {
     height: 5.5rem;
     .menu {
-      position: absolute;
+      position: fixed;
       justify-content: space-around;
       background-color: #696969f5;
       top: 0;
@@ -38,4 +38,10 @@
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+  .nav {
+    .nav-open {
+      height: 5.5rem;
+      align-items: center;
+    }
+  }
 }
