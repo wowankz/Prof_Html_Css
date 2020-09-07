@@ -1589,6 +1589,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .wrap .main .catalog-form__sort-value {
+  display: block;
   position: relative;
   outline: none;
   height: 3rem;
@@ -1687,6 +1688,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .wrap .main .catalog-form__show-value {
+  display: block;
   position: relative;
   outline: none;
   height: 3rem;
