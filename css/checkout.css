@@ -826,6 +826,9 @@ input::-webkit-calendar-picker-indicator {
     margin-top: 2rem;
     margin-left: 0;
   }
+  .header__form-browse {
+    display: none;
+  }
   .header__right {
     top: 17rem;
   }
@@ -1846,6 +1849,9 @@ input::-webkit-calendar-picker-indicator {
   }
   .footer__copyright-icons {
     margin-bottom: 2rem;
+  }
+  .footer__copyright-link {
+    width: 17vw;
   }
   .footer-content {
     -webkit-box-orient: vertical;

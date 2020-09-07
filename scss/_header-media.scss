@@ -104,6 +104,9 @@
     &__form {
       margin-top: 2rem;
       margin-left: 0;
+      &-browse {
+        display: none;
+      }
     }
 
     &__right {
