@@ -154,7 +154,7 @@
           top: 4.7rem;
           left: 1.2rem;
         }
-        &::after {
+        &:not(:last-child)::after {
           content: "\f107";
           font-family: "Font Awesome 5 Free";
           font-weight: 900;
@@ -252,3 +252,5 @@
     }
   }
 }
+
+@import "product-main-media";

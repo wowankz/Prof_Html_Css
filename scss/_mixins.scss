@@ -30,6 +30,23 @@
       }
     }
   }
+
+  @media (max-width: 992px) {
+    &__h1 {
+      font-size: 3rem;
+    }
+
+    &__nav {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+  }
+
+  @media (max-width: 576px) {
+    display: none;
+  }
 }
 
 @mixin hover-red-button {
