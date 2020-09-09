@@ -98,7 +98,6 @@
 
     &__form-button {
       width: 18rem;
-      height: 5rem;
       color: #4a4a4a;
       font-size: 1.4rem;
       font-weight: 700;
@@ -109,7 +108,7 @@
       margin-top: 1.5rem;
       @include hover-white-button;
       &_left {
-        margin-top: 1.7rem;
+        margin-top: 1.9rem;
       }
     }
 
@@ -154,3 +153,5 @@
     }
   }
 }
+
+@import "checkout-main-media";

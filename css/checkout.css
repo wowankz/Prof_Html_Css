@@ -492,7 +492,7 @@ input::-webkit-calendar-picker-indicator {
   position: absolute;
   top: 5rem;
   left: -20rem;
-  z-index: 1;
+  z-index: 10000;
   padding: 2rem 1.5rem;
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -1108,10 +1108,10 @@ input::-webkit-calendar-picker-indicator {
 
 @media (max-width: 992px) {
   .breadcrumb__h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .breadcrumb__nav {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -1244,7 +1244,6 @@ input::-webkit-calendar-picker-indicator {
 
 .main .checkout__form-button {
   width: 18rem;
-  height: 5rem;
   color: #4a4a4a;
   font-size: 1.4rem;
   font-weight: 700;
@@ -1268,7 +1267,7 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .main .checkout__form-button_left {
-  margin-top: 1.7rem;
+  margin-top: 1.9rem;
 }
 
 .main .checkout__form-login {
@@ -1346,6 +1345,64 @@ input::-webkit-calendar-picker-indicator {
 
 .main .checkout__form-forgot:hover {
   color: #f16d7f;
+}
+
+@media (max-width: 991.98px) {
+  .main .checkout__heading {
+    font-size: 2rem;
+  }
+  .main .checkout__form-h4 {
+    font-size: 1.6rem;
+  }
+  .main .checkout__form-text {
+    font-size: 1.5rem;
+  }
+  .main .checkout__form-label {
+    font-size: 1.4rem;
+  }
+  .main .checkout__form-button {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main .checkout__form-continue {
+    padding-left: 1rem;
+  }
+  .main .checkout__form-login > input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .main .checkout {
+    border-top: 0.1rem solid #ececec;
+  }
+}
+
+@media (max-width: 499.98px) {
+  .main .checkout__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .checkout__form-continue {
+    padding-left: 0;
+    width: 90vw;
+  }
+  .main .checkout__form-login {
+    width: 90vw;
+  }
+  .main .checkout__shipping-block {
+    text-align: center;
+  }
+  .main .checkout__shipping-block > input[name="drop-checkout"]:checked ~ .checkout__form {
+    height: 90rem;
+  }
 }
 
 .footer__subscribe {
