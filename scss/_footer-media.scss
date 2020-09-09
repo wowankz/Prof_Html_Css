@@ -155,7 +155,16 @@
     }
 
     &-content {
-      flex-direction: column;
+      &__company {
+        flex-basis: 49%;
+      }
+      &__information {
+        flex-basis: 49%;
+      }
+
+      &__category {
+        flex-basis: 49%;
+      }
     }
   }
 }

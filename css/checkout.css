@@ -1452,8 +1452,9 @@ input::-webkit-calendar-picker-indicator {
 .footer__subscribe-right .right__text {
   margin-top: 1.4rem;
   letter-spacing: 0.035rem;
-  line-height: 1.4rem;
+  line-height: 2rem;
   font-weight: 400;
+  text-align: center;
 }
 
 .footer__subscribe-right .right__form {
@@ -1853,10 +1854,16 @@ input::-webkit-calendar-picker-indicator {
   .footer__copyright-link {
     width: 17vw;
   }
-  .footer-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .footer-content__company {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+  }
+  .footer-content__information {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+  }
+  .footer-content__category {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
   }
 }
