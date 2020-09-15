@@ -1658,6 +1658,11 @@ input::-webkit-calendar-picker-indicator {
   .category__img {
     -o-object-position: top;
        object-position: top;
+    opacity: 0.3;
+  }
+  .category__badge {
+    -webkit-box-shadow: 1px 1px 3px #9E9E9E;
+            box-shadow: 1px 1px 3px #9E9E9E;
   }
   .products__content .card {
     width: 95vw;
