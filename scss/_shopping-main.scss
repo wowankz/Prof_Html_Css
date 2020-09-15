@@ -191,6 +191,7 @@
     &__form {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
     }
 
     &__form-address {
@@ -346,3 +347,5 @@
     }
   }
 }
+
+@import "shopping-main-media";

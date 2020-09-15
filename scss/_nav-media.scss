@@ -39,6 +39,7 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
   .nav {
+    border-bottom: 0.1rem solid #eaeaea;
     .nav-open {
       height: 5.5rem;
       align-items: center;

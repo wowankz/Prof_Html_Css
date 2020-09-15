@@ -1054,6 +1054,9 @@ input::-webkit-calendar-picker-indicator {
 }
 
 @media (max-width: 575.98px) {
+  .nav {
+    border-bottom: 0.1rem solid #eaeaea;
+  }
   .nav .nav-open {
     height: 5.5rem;
     -webkit-box-align: center;
