@@ -1391,6 +1391,7 @@ input::-webkit-calendar-picker-indicator {
   top: 0.2rem;
   right: 0;
   left: 0;
+  z-index: 1;
 }
 
 .wrap .main .catalog-form__range-min::-webkit-slider-runnable-track {
@@ -1473,6 +1474,7 @@ input::-webkit-calendar-picker-indicator {
   top: 0.2rem;
   right: 0;
   left: 0;
+  z-index: 1;
 }
 
 .wrap .main .catalog-form__range-max::-webkit-slider-runnable-track {
