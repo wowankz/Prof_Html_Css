@@ -508,7 +508,8 @@
                         </div>
                         <div class="product__choose-datalist">
                             <label class="product__choose-name" for="quantity">QUANTITY</label><br>
-                            <input type="number" name="quantity" id="quantity" placeholder="2">
+                            <input type="number" oninput="this.value = this.value < 1 ? 1 : this.value" min="1" name="quantity" id="quantity"
+                                placeholder="2">
                         </div>
                     </form>
                     <a href="#" class="product__button">
